@@ -1,15 +1,7 @@
-"""QM640 Data Analytics Capstone - Final Report Pipeline.
+"""QM640: municipal correlates of licensed 5G NR infrastructure in Brazil.
 
-The State of Cloud-Native Transformation on Telecommunications Networks in
-Brazil: A Municipal-Level Machine Learning Analysis of Licensed 5G NR Rollout,
-Digital Readiness, and Private-Network Adoption.
-
-Author: Rony Anderson Spada Pedroso (Walsh College, QM640)
-
-Running ``python final_pipeline.py`` regenerates every number, table, and
-figure reported in the final report from the committed analysis input
-``data/processed/merged_municipal_dataset.csv`` with a fixed seed (42).
-Outputs are written to ``reports/figures`` and ``reports/tables``.
+Compute the complete analysis from the preserved municipal dataset and verify
+the generated results against the final report at its displayed precision.
 """
 
 from __future__ import annotations
@@ -18,6 +10,7 @@ import hashlib
 import json
 import os
 import warnings
+from pathlib import Path
 
 import numpy as np
 import pandas as pd
@@ -39,12 +32,12 @@ from sklearn.model_selection import GridSearchCV, cross_val_score, train_test_sp
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
 
-warnings.filterwarnings("ignore")
-
 SEED = 42
-DATA_PATH = os.path.join("data", "processed", "merged_municipal_dataset.csv")
-FIG_DIR = os.path.join("reports", "figures")
-TAB_DIR = os.path.join("reports", "tables")
+ROOT = Path(__file__).resolve().parent
+EXPECTED_SHA256 = "50fac84b16f63d66628741f36686cc076f43c90632a3befe53ca43ed9b316207"
+DATA_PATH = ROOT / "data" / "processed" / "merged_municipal_dataset.csv"
+FIG_DIR = ROOT / "reports" / "figures"
+TAB_DIR = ROOT / "reports" / "tables"
 
 REGION_MAP = {
     "1": "North",
@@ -87,6 +80,8 @@ def input_sha256() -> str:
 def load_and_clean() -> pd.DataFrame:
     """Load the supplied merged dataset and restore one row per municipality."""
     RESULTS["input_sha256"] = input_sha256()
+    if RESULTS["input_sha256"] != EXPECTED_SHA256:
+        raise ValueError("Input checksum differs from the study dataset; refusing to fit models.")
     print(f"Input SHA-256: {RESULTS['input_sha256']}")
     raw = pd.read_csv(DATA_PATH, dtype={"MUNICIP_ID": str})
     RESULTS["raw_shape"] = list(raw.shape)
@@ -114,6 +109,8 @@ def load_and_clean() -> pd.DataFrame:
             agg[col] = first_non_null
     df = df.groupby("MUNICIP_ID", as_index=False).agg(agg)
     RESULTS["clean_rows"] = int(len(df))
+    if len(df) != 5571 or df.MUNICIP_ID.duplicated().any():
+        raise ValueError("Expected exactly one row for each of 5,571 municipalities")
 
     # 3) Align variable names with the project data dictionary.
     df = df.rename(columns=RENAME_MAP)
@@ -558,7 +555,7 @@ def revision_robustness(df: pd.DataFrame, frame: pd.DataFrame) -> None:
     }
 
     # (b) grouped-by-state vs random CV on the full modeling frame
-    def cv_compare(model_factory, y, scoring_fn):
+    def cv_compare(model_factory, y):
         out = {}
         for name, splitter in [("random_stratified", StratifiedKFold(5, shuffle=True, random_state=SEED)),
                                ("grouped_by_state", GroupKFold(5))]:
@@ -569,11 +566,11 @@ def revision_robustness(df: pd.DataFrame, frame: pd.DataFrame) -> None:
                 scores["roc_auc"].append(roc_auc_score(y.iloc[te], mdl.predict_proba(x.iloc[te])[:, 1]))
             out[name] = {k: {"mean": float(np.mean(v)), "sd": float(np.std(v))} for k, v in scores.items()}
         return out
-    rev["rq1_cv_random_vs_state"] = cv_compare(lambda: RandomForestClassifier(**rf_cfg), frame["HIGH_NR_P75"], None)
+    rev["rq1_cv_random_vs_state"] = cv_compare(lambda: RandomForestClassifier(**rf_cfg), frame["HIGH_NR_P75"])
     rev["rq4_cv_random_vs_state"] = cv_compare(
         lambda: Pipeline([("scale", StandardScaler()),
                           ("clf", LogisticRegression(class_weight="balanced", max_iter=2000, random_state=SEED))]),
-        frame["HIGH_SLP"], None)
+        frame["HIGH_SLP"])
     rev["n_states"] = int(groups.nunique())
 
     # (c) RQ2 two-part model
@@ -603,7 +600,10 @@ def revision_robustness(df: pd.DataFrame, frame: pd.DataFrame) -> None:
                              for k in exog},
         }
     except Exception as e:  # pragma: no cover
-        rev["rq2_negbin_exposure"] = {"error": str(e)}
+        raise RuntimeError("Legacy comparison NB failed") from e
+    nb_result = rev["rq2_negbin_exposure"]
+    if not nb_result["converged"] or not np.isfinite(nb.params).all():
+        raise RuntimeError("Legacy comparison NB did not converge")
 
     # (d) Cramer's V for region x cluster
     ct = pd.read_csv(os.path.join(TAB_DIR, "rq3_region_crosstab.csv"), index_col=0)
@@ -728,27 +728,100 @@ def source_merge_diagram():
     plt.close(fig)
 
 
-def main() -> None:
-    os.makedirs(FIG_DIR, exist_ok=True)
-    os.makedirs(TAB_DIR, exist_ok=True)
-    np.random.seed(SEED)
+def main(argv=None) -> int:
+    import argparse
+    import platform
+    import shutil
+    import tempfile
+    import contextlib
+    import time
+    from collections import Counter
+    from datetime import datetime, timezone
+    import importlib.metadata as metadata
+    import fcntl
+    import uuid
+    from src import report_analysis, report_outputs
+    from src.verification import compare_report, verify_results
 
-    workflow_diagram()
-    source_merge_diagram()
-    df = load_and_clean()
-    descriptives(df)
-    rollout_stage_analysis(df)
-    frame = model_frame(df)
-    rq1_classification(frame)
-    rq2_ridge(frame)
-    rq3_clustering(df)
-    rq4_logistic(frame)
-    revision_robustness(df, frame)
-
-    with open(os.path.join(TAB_DIR, "headline_results.json"), "w") as fh:
-        json.dump(RESULTS, fh, indent=2, default=str)
-    print(json.dumps(RESULTS, indent=2, default=str))
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--output',type=Path,default=ROOT/'reports')
+    parser.add_argument('--jobs',type=int,default=4)
+    parser.add_argument('--state-bootstrap',type=int,default=999,
+                        help='Use 999 for a full run. Smaller runs are labeled diagnostic.')
+    args=parser.parse_args(argv)
+    if args.jobs < 1 or args.state_bootstrap < 25:
+        parser.error('jobs must be positive and state-bootstrap must be at least 25')
+    output=args.output.resolve(); output.mkdir(parents=True,exist_ok=True)
+    marker=output/'execution_status.json'
+    lock=(output/'.pipeline.lock').open('a+')
+    try:
+        fcntl.flock(lock.fileno(),fcntl.LOCK_EX|fcntl.LOCK_NB)
+    except BlockingIOError:
+        lock.close()
+        raise RuntimeError('Another pipeline process owns this output directory')
+    run_id=uuid.uuid4().hex
+    marker.write_text(json.dumps({'status':'running','run_id':run_id,'pid':os.getpid(),
+                                  'started':datetime.now(timezone.utc).isoformat()}))
+    start=time.monotonic()
+    global FIG_DIR,TAB_DIR
+    original_dirs=(FIG_DIR,TAB_DIR)
+    try:
+        # Retain a failed generation for diagnosis; never lose expensive bootstrap outputs.
+        with contextlib.nullcontext(tempfile.mkdtemp(prefix='.capstone-run-',dir=output.parent)) as staging:
+            stage=Path(staging); FIG_DIR=stage/'figures'; TAB_DIR=stage/'tables'
+            FIG_DIR.mkdir(); TAB_DIR.mkdir(); RESULTS.clear(); np.random.seed(SEED)
+            with warnings.catch_warnings(record=True) as captured:
+                warnings.simplefilter('always')
+                print('1/5 Data preparation and descriptive analyses',flush=True)
+                df=load_and_clean(); descriptives(df); rollout_stage_analysis(df)
+                frame=model_frame(df)
+                if len(frame)!=5564: raise ValueError('Expected common modeling frame N=5,564')
+                frame.to_csv(TAB_DIR/'model_frame.csv',index=False)
+                print('2/5 Core models',flush=True)
+                rq1_classification(frame); rq2_ridge(frame); rq3_clustering(df)
+                rq4_logistic(frame); revision_robustness(df,frame)
+                print('3/5 Complete report analyses and state bootstrap',flush=True)
+                structural=EXOG_NUM+[c for c in frame if c.startswith('REGION_')]
+                RESULTS['extended']=report_analysis.run(df,frame,structural,RESULTS,
+                    DATA_PATH,TAB_DIR,FIG_DIR,args.jobs,args.state_bootstrap)
+                print('4/5 Report tables, diagrams, and traceability',flush=True)
+                source_merge_diagram()
+                report_outputs.build(df,frame,RESULTS,TAB_DIR,FIG_DIR)
+            RESULTS['run']={'schema_version':2,'status':'complete','run_id':run_id,
+                'mode':'full' if args.state_bootstrap==999 else 'diagnostic',
+                'elapsed_seconds':time.monotonic()-start,'timestamp_utc':datetime.now(timezone.utc).isoformat(),
+                'python':platform.python_version(),'platform':platform.platform(),
+                'packages':{name:metadata.version(name) for name in ['numpy','pandas','scipy','scikit-learn','statsmodels','matplotlib','joblib','threadpoolctl']},
+                'source_sha256':{str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest()
+                    for p in [ROOT/'final_pipeline.py',ROOT/'requirements.txt',*sorted((ROOT/'src').glob('*.py'))]},
+                'warnings':dict(Counter(str(w.message) for w in captured))}
+            report_analysis.write_json(TAB_DIR/'headline_results.json',RESULTS)
+            print('5/5 Validate computation and final report results',flush=True)
+            verify_results(RESULTS,stage,ROOT,require_full=args.state_bootstrap==999,verify_manifest=False)
+            comparison=compare_report(RESULTS,ROOT/'scripts/final_report_reference.json',stage)
+            report_analysis.write_json(stage/'run_manifest.json',{'schema_version':2,
+                'input_sha256':RESULTS['input_sha256'],'mode':RESULTS['run']['mode'],
+                'files':{str(p.relative_to(stage)):hashlib.sha256(p.read_bytes()).hexdigest()
+                         for p in sorted(stage.rglob('*')) if p.is_file()}})
+            # Execution status remains running throughout publication.
+            report_outputs.publish(stage,output)
+            stage.rmdir()
+        (output/'last_failed_run.txt').unlink(missing_ok=True)
+        marker.write_text(json.dumps({'status':'complete','run_id':run_id}))
+        print(f'COMPUTATION COMPLETE ({RESULTS["run"]["mode"]}). Outputs: {output}',flush=True)
+        print(f'REPORT CHECK: {comparison["summary"]}. See report_comparison.md.',flush=True)
+        return 0 if comparison['exact_match'] else 2
+    except BaseException:
+        # Retain existing outputs; clearly mark this attempt as failed.
+        import traceback
+        (output/'last_failed_run.txt').write_text(traceback.format_exc()+'\nStaging directory: '+str(locals().get('staging','not created'))+'\n')
+        marker.write_text(json.dumps({'status':'failed','run_id':run_id}))
+        raise
+    finally:
+        FIG_DIR,TAB_DIR=original_dirs
+        fcntl.flock(lock.fileno(),fcntl.LOCK_UN)
+        lock.close()
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

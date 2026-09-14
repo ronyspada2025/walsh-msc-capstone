@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 Walsh QM640 Brazil 5G Capstone
 Current-source refresh + provenance audit
@@ -9,7 +9,7 @@ Designed for users with limited CLI experience.
 
 WHAT THIS SCRIPT DOES
 ---------------------
-1. Finds the local brazil-cloud-native-telecom-capstone repository.
+1. Finds the local walsh-msc-capstone repository.
 2. Downloads current official Anatel/IBGE source datasets into:
        ~/Downloads/Capstone_Raw_Refresh_YYYY-MM-DD/
 3. Validates downloads (ZIP / JSON / blocking-page detection).
@@ -378,12 +378,12 @@ def common_repo_candidates(script_path: Path):
 
 
     names = [
-        HOME / "brazil-cloud-native-telecom-capstone",
-        DOWNLOADS / "brazil-cloud-native-telecom-capstone",
-        HOME / "Documents" / "brazil-cloud-native-telecom-capstone",
-        HOME / "Desktop" / "brazil-cloud-native-telecom-capstone",
-        script_path.parent / "brazil-cloud-native-telecom-capstone",
-        Path.cwd() / "brazil-cloud-native-telecom-capstone",
+        HOME / "walsh-msc-capstone",
+        DOWNLOADS / "walsh-msc-capstone",
+        HOME / "Documents" / "walsh-msc-capstone",
+        HOME / "Desktop" / "walsh-msc-capstone",
+        script_path.parent / "walsh-msc-capstone",
+        Path.cwd() / "walsh-msc-capstone",
         Path.cwd(),
     ]
 
@@ -418,7 +418,7 @@ def choose_repo_gui() -> Path | None:
 
         folder = filedialog.askdirectory(
             title=(
-                "Select the brazil-cloud-native-telecom-capstone folder"
+                "Select the walsh-msc-capstone folder"
             )
         )
 
@@ -474,9 +474,9 @@ def locate_repository(script_path: Path) -> Path:
     print(
         "Please paste the full path to the repository folder.\n"
         "Example:\n"
-        "  C:\\Users\\YourName\\brazil-cloud-native-telecom-capstone\n"
+        "  C:\\Users\\YourName\\walsh-msc-capstone\n"
         "or\n"
-        "  /Users/YourName/brazil-cloud-native-telecom-capstone"
+        "  /Users/YourName/walsh-msc-capstone"
     )
 
 

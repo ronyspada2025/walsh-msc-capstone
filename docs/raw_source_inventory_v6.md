@@ -1,7 +1,7 @@
 # Version 6 Local Raw-Source Inventory
 
 - Audit time (UTC): `2026-09-02T00:27:03.411783+00:00`
-- Raw directory inspected: `/Users/ronypedroso/Documents/Thesis/brazil-cloud-native-telecom-capstone/data/raw`
+- Raw directory inspected: `data/raw`
 - Raw directory exists: `no`
 - Source families with at least one filename match: `0/10`
 - Matching local files recorded: `0`

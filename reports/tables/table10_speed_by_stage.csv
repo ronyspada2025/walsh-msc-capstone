@@ -1,0 +1,4 @@
+ROLLOUT_STAGE,n,mean_speed,median_speed,sd_speed,median_fiber,median_sa
+High-count NR (> P75),1251,60.69,55.63,26.65,140.44,84.62
+NR present below P75,941,41.01,39.08,15.58,91.1,34.88
+No NR station,3379,38.35,36.6,14.94,70.15,0.0

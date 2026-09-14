@@ -1,18 +1,7 @@
-Bundle: walsh-msc-capstone update kit
-Version: v7 (2026-09-14)
-This supersedes ALL previous zips. Delete any older copies of
-"walsh-msc-capstone-update.zip" and "walsh-msc-capstone-migration.zip"
-and any previously extracted "repo_update" folders before using this one.
-
-Changelog:
-  v1  initial migration kit (migrate_repo.sh) - superseded
-  v2  update kit: added revised report + verification scripts to the repo
-  v3  removed the final report from the repository payload
-  v4  README cleaned of old-repository references; migration note removed;
-      script now DELETES any previously pushed report files
-  v5  README version line corrected to "Final Report, Revised
-      (September 13, 2026)"; bundle renamed with version number
-  v6  run_verification.sh now uses "python3 -m pip" so it works on macOS
-      where only pip3 exists
-  v7  everything packed into ONE self-contained script
-      (capstone_update_v7.sh); no zip needed
+Project: Walsh MSc Capstone
+Release date: 2026-09-14
+Entrypoint: python final_pipeline.py
+Full analysis: 999 state-bootstrap draws; 1000 held-out resamples; repeated 5x5 CV
+Verification: python scripts/verify_project.py
+Final report: docs/final_report.pdf
+Final presentation: docs/final_presentation.pdf

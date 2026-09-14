@@ -1,0 +1,5691 @@
+{
+  "source": "Final report: docs/final_report.pdf, Tables 4-20 and RQ2 results; 67 pages.",
+  "purpose": "Fixed printed report values. Used only after fitting to evaluate reproduction.",
+  "metrics": [
+    {
+      "name": "Raw rows",
+      "path": [
+        "raw_shape",
+        "0"
+      ],
+      "reported": "10107",
+      "decimals": 0,
+      "location": "Tables 4-7"
+    },
+    {
+      "name": "Raw columns",
+      "path": [
+        "raw_shape",
+        "1"
+      ],
+      "reported": "25",
+      "decimals": 0,
+      "location": "Tables 4-7"
+    },
+    {
+      "name": "Clean rows",
+      "path": [
+        "clean_rows"
+      ],
+      "reported": "5571",
+      "decimals": 0,
+      "location": "Tables 4-7"
+    },
+    {
+      "name": "Model rows",
+      "path": [
+        "model_n"
+      ],
+      "reported": "5564",
+      "decimals": 0,
+      "location": "Tables 4-7"
+    },
+    {
+      "name": "Exact duplicates",
+      "path": [
+        "exact_duplicate_rows_dropped"
+      ],
+      "reported": "193",
+      "decimals": 0,
+      "location": "Tables 4-7"
+    },
+    {
+      "name": "Duplicate keys",
+      "path": [
+        "duplicate_key_rows"
+      ],
+      "reported": "4343",
+      "decimals": 0,
+      "location": "Tables 4-7"
+    },
+    {
+      "name": "Columns before targets",
+      "path": [
+        "clean_columns"
+      ],
+      "reported": "42",
+      "decimals": 0,
+      "location": "Tables 4-7"
+    },
+    {
+      "name": "Structural complete cases",
+      "path": [
+        "complete_cases"
+      ],
+      "reported": "5565",
+      "decimals": 0,
+      "location": "Tables 4-7"
+    },
+    {
+      "name": "rq1_naive_p75 accuracy",
+      "path": [
+        "rq1_naive_p75",
+        "accuracy"
+      ],
+      "reported": ".930",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_naive_p75 f1",
+      "path": [
+        "rq1_naive_p75",
+        "f1"
+      ],
+      "reported": ".835",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_naive_p75 roc_auc",
+      "path": [
+        "rq1_naive_p75",
+        "roc_auc"
+      ],
+      "reported": ".965",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_naive_p75 positive_share",
+      "path": [
+        "rq1_naive_p75",
+        "positive_share"
+      ],
+      "reported": ".225",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p75 accuracy",
+      "path": [
+        "rq1_leakage_free_p75",
+        "accuracy"
+      ],
+      "reported": ".915",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p75 f1",
+      "path": [
+        "rq1_leakage_free_p75",
+        "f1"
+      ],
+      "reported": ".808",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p75 roc_auc",
+      "path": [
+        "rq1_leakage_free_p75",
+        "roc_auc"
+      ],
+      "reported": ".927",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p75 positive_share",
+      "path": [
+        "rq1_leakage_free_p75",
+        "positive_share"
+      ],
+      "reported": ".225",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p70 accuracy",
+      "path": [
+        "rq1_leakage_free_p70",
+        "accuracy"
+      ],
+      "reported": ".889",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p70 f1",
+      "path": [
+        "rq1_leakage_free_p70",
+        "f1"
+      ],
+      "reported": ".768",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p70 roc_auc",
+      "path": [
+        "rq1_leakage_free_p70",
+        "roc_auc"
+      ],
+      "reported": ".903",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p70 positive_share",
+      "path": [
+        "rq1_leakage_free_p70",
+        "positive_share"
+      ],
+      "reported": ".257",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p80 accuracy",
+      "path": [
+        "rq1_leakage_free_p80",
+        "accuracy"
+      ],
+      "reported": ".922",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p80 f1",
+      "path": [
+        "rq1_leakage_free_p80",
+        "f1"
+      ],
+      "reported": ".778",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p80 roc_auc",
+      "path": [
+        "rq1_leakage_free_p80",
+        "roc_auc"
+      ],
+      "reported": ".925",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "rq1_leakage_free_p80 positive_share",
+      "path": [
+        "rq1_leakage_free_p80",
+        "positive_share"
+      ],
+      "reported": ".191",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "Per-capita count-settings accuracy",
+      "path": [
+        "revision",
+        "rq1_per_capita_p75",
+        "accuracy"
+      ],
+      "reported": ".813",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "Per-capita count-settings f1",
+      "path": [
+        "revision",
+        "rq1_per_capita_p75",
+        "f1"
+      ],
+      "reported": ".590",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "Per-capita count-settings roc_auc",
+      "path": [
+        "revision",
+        "rq1_per_capita_p75",
+        "roc_auc"
+      ],
+      "reported": ".818",
+      "decimals": 3,
+      "location": "Table 12"
+    },
+    {
+      "name": "sa_p70",
+      "path": [
+        "sa_p70"
+      ],
+      "reported": "6",
+      "decimals": 0,
+      "location": "EDA pp. 28-33"
+    },
+    {
+      "name": "sa_p75",
+      "path": [
+        "sa_p75"
+      ],
+      "reported": "9",
+      "decimals": 0,
+      "location": "EDA pp. 28-33"
+    },
+    {
+      "name": "sa_p80",
+      "path": [
+        "sa_p80"
+      ],
+      "reported": "12",
+      "decimals": 0,
+      "location": "EDA pp. 28-33"
+    },
+    {
+      "name": "slp_p75",
+      "path": [
+        "slp_p75"
+      ],
+      "reported": "1618",
+      "decimals": 0,
+      "location": "EDA pp. 28-33"
+    },
+    {
+      "name": "anova_f",
+      "path": [
+        "anova_f"
+      ],
+      "reported": "691.4",
+      "decimals": 1,
+      "location": "EDA pp. 28-33"
+    },
+    {
+      "name": "corr_speed_nr",
+      "path": [
+        "corr_speed_nr"
+      ],
+      "reported": ".61",
+      "decimals": 2,
+      "location": "EDA pp. 28-33"
+    },
+    {
+      "name": "corr_speed_density",
+      "path": [
+        "corr_speed_density"
+      ],
+      "reported": ".36",
+      "decimals": 2,
+      "location": "EDA pp. 28-33"
+    },
+    {
+      "name": "Regional presence South",
+      "path": [
+        "regional_nr_share",
+        "South"
+      ],
+      "reported": "46.8",
+      "decimals": 1,
+      "location": "Figure 8"
+    },
+    {
+      "name": "Regional presence Northeast",
+      "path": [
+        "regional_nr_share",
+        "Northeast"
+      ],
+      "reported": "38.7",
+      "decimals": 1,
+      "location": "Figure 8"
+    },
+    {
+      "name": "Regional presence Southeast",
+      "path": [
+        "regional_nr_share",
+        "Southeast"
+      ],
+      "reported": "37.6",
+      "decimals": 1,
+      "location": "Figure 8"
+    },
+    {
+      "name": "Regional presence North",
+      "path": [
+        "regional_nr_share",
+        "North"
+      ],
+      "reported": "34.9",
+      "decimals": 1,
+      "location": "Figure 8"
+    },
+    {
+      "name": "Regional presence Center-West",
+      "path": [
+        "regional_nr_share",
+        "Center-West"
+      ],
+      "reported": "33.3",
+      "decimals": 1,
+      "location": "Figure 8"
+    },
+    {
+      "name": "count 42.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "42",
+        "auc"
+      ],
+      "reported": ".927",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count 42.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".906",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count 42.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".945",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count repeated_cv.roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "repeated_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".920",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count repeated_cv.roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "repeated_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".009",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count repeated_cv.f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "repeated_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".776",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count repeated_cv.f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "repeated_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".020",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count 2026.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "2026",
+        "auc"
+      ],
+      "reported": ".919",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count 2026.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".899",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count 2026.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".938",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "count 2026.f1",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "2026",
+        "f1"
+      ],
+      "reported": ".773",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap 42.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "42",
+        "auc"
+      ],
+      "reported": ".817",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap 42.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".790",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap 42.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".845",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap repeated_cv.roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "repeated_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".824",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap repeated_cv.roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "repeated_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap repeated_cv.f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "repeated_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".603",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap repeated_cv.f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "repeated_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".024",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap 2026.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "2026",
+        "auc"
+      ],
+      "reported": ".825",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap 2026.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "0.799",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap 2026.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.849",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "percap 2026.f1",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "2026",
+        "f1"
+      ],
+      "reported": ".590",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence 42.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "42",
+        "auc"
+      ],
+      "reported": ".849",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence 42.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "0.828",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence 42.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.869",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence repeated_cv.roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "repeated_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".849",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence repeated_cv.roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "repeated_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".014",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence repeated_cv.f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "repeated_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".720",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence repeated_cv.f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "repeated_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".016",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence 2026.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "2026",
+        "auc"
+      ],
+      "reported": ".844",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence 2026.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".821",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence 2026.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.865",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "presence 2026.f1",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "2026",
+        "f1"
+      ],
+      "reported": ".707",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp 42.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "auc"
+      ],
+      "reported": ".810",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp 42.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "0.782",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp 42.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.835",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp repeated_cv.roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "repeated_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".798",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp repeated_cv.roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "repeated_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".010",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp repeated_cv.f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "repeated_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".557",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp repeated_cv.f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "repeated_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".013",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp 2026.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "2026",
+        "auc"
+      ],
+      "reported": ".780",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp 2026.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "0.752",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp 2026.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.808",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "slp 2026.f1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "2026",
+        "f1"
+      ],
+      "reported": ".534",
+      "decimals": 3,
+      "location": "Table 14"
+    },
+    {
+      "name": "rq1_cv_random_vs_state random_stratified f1.mean",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "random_stratified",
+        "f1",
+        "mean"
+      ],
+      "reported": ".775",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq1_cv_random_vs_state random_stratified f1.sd",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "random_stratified",
+        "f1",
+        "sd"
+      ],
+      "reported": ".014",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq1_cv_random_vs_state random_stratified roc_auc.mean",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "random_stratified",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".919",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq1_cv_random_vs_state random_stratified roc_auc.sd",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "random_stratified",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".003",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq1_cv_random_vs_state grouped_by_state f1.mean",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "grouped_by_state",
+        "f1",
+        "mean"
+      ],
+      "reported": ".766",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq1_cv_random_vs_state grouped_by_state f1.sd",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "grouped_by_state",
+        "f1",
+        "sd"
+      ],
+      "reported": ".047",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq1_cv_random_vs_state grouped_by_state roc_auc.mean",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "grouped_by_state",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".909",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq1_cv_random_vs_state grouped_by_state roc_auc.sd",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "grouped_by_state",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".023",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq4_cv_random_vs_state random_stratified f1.mean",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "random_stratified",
+        "f1",
+        "mean"
+      ],
+      "reported": ".556",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq4_cv_random_vs_state random_stratified f1.sd",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "random_stratified",
+        "f1",
+        "sd"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq4_cv_random_vs_state random_stratified roc_auc.mean",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "random_stratified",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".799",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq4_cv_random_vs_state random_stratified roc_auc.sd",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "random_stratified",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq4_cv_random_vs_state grouped_by_state f1.mean",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "grouped_by_state",
+        "f1",
+        "mean"
+      ],
+      "reported": ".466",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq4_cv_random_vs_state grouped_by_state f1.sd",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "grouped_by_state",
+        "f1",
+        "sd"
+      ],
+      "reported": ".152",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq4_cv_random_vs_state grouped_by_state roc_auc.mean",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "grouped_by_state",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".758",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "rq4_cv_random_vs_state grouped_by_state roc_auc.sd",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "grouped_by_state",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".067",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "Presence state CV roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "state_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".839",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "Presence state CV roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "state_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".035",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "Presence state CV f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "state_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".710",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "Presence state CV f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "state_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".047",
+      "decimals": 3,
+      "location": "Table 13"
+    },
+    {
+      "name": "raw ridge r2",
+      "path": [
+        "extended",
+        "ridge",
+        "raw",
+        "r2"
+      ],
+      "reported": ".02",
+      "decimals": 2,
+      "location": "Table 11"
+    },
+    {
+      "name": "raw ridge r2_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "ridge",
+        "raw",
+        "r2_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "-.08",
+      "decimals": 2,
+      "location": "Table 11"
+    },
+    {
+      "name": "raw ridge r2_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "ridge",
+        "raw",
+        "r2_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".09",
+      "decimals": 2,
+      "location": "Table 11"
+    },
+    {
+      "name": "log ridge r2",
+      "path": [
+        "extended",
+        "ridge",
+        "log",
+        "r2"
+      ],
+      "reported": ".06",
+      "decimals": 2,
+      "location": "Table 11"
+    },
+    {
+      "name": "log ridge r2_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "ridge",
+        "log",
+        "r2_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "-0.14",
+      "decimals": 2,
+      "location": "Table 11"
+    },
+    {
+      "name": "log ridge r2_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "ridge",
+        "log",
+        "r2_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".18",
+      "decimals": 2,
+      "location": "Table 11"
+    },
+    {
+      "name": "rq3_best_k",
+      "path": [
+        "rq3_best_k"
+      ],
+      "reported": "2",
+      "decimals": 0,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "rq3_silhouettes.2",
+      "path": [
+        "rq3_silhouettes",
+        "2"
+      ],
+      "reported": ".305",
+      "decimals": 3,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "rq3_ari_mean",
+      "path": [
+        "rq3_ari_mean"
+      ],
+      "reported": ".99",
+      "decimals": 2,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "rq3_ari_sd",
+      "path": [
+        "rq3_ari_sd"
+      ],
+      "reported": ".01",
+      "decimals": 2,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "rq3_chi2",
+      "path": [
+        "rq3_chi2"
+      ],
+      "reported": "254.1",
+      "decimals": 1,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "rq3_chi2_dof",
+      "path": [
+        "rq3_chi2_dof"
+      ],
+      "reported": "4",
+      "decimals": 0,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "revision.rq3_cramers_v",
+      "path": [
+        "revision",
+        "rq3_cramers_v"
+      ],
+      "reported": ".21",
+      "decimals": 2,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "rq3_cluster_sizes.0",
+      "path": [
+        "rq3_cluster_sizes",
+        "0"
+      ],
+      "reported": "1231",
+      "decimals": 0,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "rq3_cluster_sizes.1",
+      "path": [
+        "rq3_cluster_sizes",
+        "1"
+      ],
+      "reported": "4334",
+      "decimals": 0,
+      "location": "Table 17 / slide 22"
+    },
+    {
+      "name": "GDP_PER_CAP cluster 0",
+      "path": [
+        "rq3_profiles",
+        "GDP_PER_CAP",
+        "0"
+      ],
+      "reported": "47958.6",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "GDP_PER_CAP cluster 1",
+      "path": [
+        "rq3_profiles",
+        "GDP_PER_CAP",
+        "1"
+      ],
+      "reported": "29300.4",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "POP_DENSITY cluster 0",
+      "path": [
+        "rq3_profiles",
+        "POP_DENSITY",
+        "0"
+      ],
+      "reported": "419.6",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "POP_DENSITY cluster 1",
+      "path": [
+        "rq3_profiles",
+        "POP_DENSITY",
+        "1"
+      ],
+      "reported": "29.9",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "FIBER_PER_100 cluster 0",
+      "path": [
+        "rq3_profiles",
+        "FIBER_PER_100",
+        "0"
+      ],
+      "reported": "155.4",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "FIBER_PER_100 cluster 1",
+      "path": [
+        "rq3_profiles",
+        "FIBER_PER_100",
+        "1"
+      ],
+      "reported": "82.8",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "LTE_ACCESS_PER_100 cluster 0",
+      "path": [
+        "rq3_profiles",
+        "LTE_ACCESS_PER_100",
+        "0"
+      ],
+      "reported": "78.0",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "LTE_ACCESS_PER_100 cluster 1",
+      "path": [
+        "rq3_profiles",
+        "LTE_ACCESS_PER_100",
+        "1"
+      ],
+      "reported": "76.6",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "NR_ACCESS_PER_100 cluster 0",
+      "path": [
+        "rq3_profiles",
+        "NR_ACCESS_PER_100",
+        "0"
+      ],
+      "reported": "29.2",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "NR_ACCESS_PER_100 cluster 1",
+      "path": [
+        "rq3_profiles",
+        "NR_ACCESS_PER_100",
+        "1"
+      ],
+      "reported": "0.7",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "AVG_DL_SPEED cluster 0",
+      "path": [
+        "rq3_profiles",
+        "AVG_DL_SPEED",
+        "0"
+      ],
+      "reported": "64.4",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "AVG_DL_SPEED cluster 1",
+      "path": [
+        "rq3_profiles",
+        "AVG_DL_SPEED",
+        "1"
+      ],
+      "reported": "38.0",
+      "decimals": 1,
+      "location": "Table 17"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "beta"
+      ],
+      "reported": ".222",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": ".171",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".274",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".047",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".397",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.118",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.460",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "ratio"
+      ],
+      "reported": "1.25",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "p_t"
+      ],
+      "reported": ".015",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "beta"
+      ],
+      "reported": ".148",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": ".077",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".219",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".013",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".282",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.536",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.294",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "ratio"
+      ],
+      "reported": "1.16",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_South p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "p_t"
+      ],
+      "reported": ".033",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "beta"
+      ],
+      "reported": ".134",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": ".090",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".178",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".069",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".199",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.082",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.198",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "ratio"
+      ],
+      "reported": "1.14",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 15",
+      "operator": "lt"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "beta"
+      ],
+      "reported": ".104",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": ".058",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".150",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".064",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".145",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.052",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.150",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "ratio"
+      ],
+      "reported": "1.11",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 15",
+      "operator": "lt"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "beta"
+      ],
+      "reported": ".060",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.012",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".131",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.067",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".187",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.691",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": ".198",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "ratio"
+      ],
+      "reported": "1.06",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "p_t"
+      ],
+      "reported": ".343",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "beta"
+      ],
+      "reported": ".034",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.004",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".073",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.035",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".103",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.057",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.170",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "ratio"
+      ],
+      "reported": "1.03",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "p_t"
+      ],
+      "reported": ".314",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "beta"
+      ],
+      "reported": ".020",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.050",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".089",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.083",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".123",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.674",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.206",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "ratio"
+      ],
+      "reported": "1.02",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "p_t"
+      ],
+      "reported": ".696",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "beta"
+      ],
+      "reported": "-.019",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.068",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".030",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.087",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".049",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.406",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.075",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "ratio"
+      ],
+      "reported": ".98",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB REGION_North p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "p_t"
+      ],
+      "reported": ".571",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "beta"
+      ],
+      "reported": "-.139",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.168",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": "-.109",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.270",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": "-.008",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.244",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "-0.024",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "ratio"
+      ],
+      "reported": ".87",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB clogpop p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "p_t"
+      ],
+      "reported": ".039",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB n",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "n"
+      ],
+      "reported": "2192",
+      "decimals": 0,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB alpha",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "alpha"
+      ],
+      "reported": "0.65",
+      "decimals": 2,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB pseudo_r2_mcfadden",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "pseudo_r2_mcfadden"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 15"
+    },
+    {
+      "name": "Truncated NB bootstrap.valid",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "bootstrap",
+        "valid"
+      ],
+      "reported": "933",
+      "decimals": 0,
+      "location": "Table 15"
+    },
+    {
+      "name": "Unconditional NB REGION_South beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_South",
+        "beta"
+      ],
+      "reported": ".400",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_South cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_South",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".129",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_South cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_South",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".672",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_South p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_South",
+        "p_t"
+      ],
+      "reported": ".005",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB FIBER_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "FIBER_PER_100",
+        "beta"
+      ],
+      "reported": ".302",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB FIBER_PER_100 cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "FIBER_PER_100",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".140",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB FIBER_PER_100 cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "FIBER_PER_100",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".463",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB FIBER_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "FIBER_PER_100",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_Northeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Northeast",
+        "beta"
+      ],
+      "reported": ".215",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_Northeast cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Northeast",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.073",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_Northeast cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Northeast",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".503",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_Northeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Northeast",
+        "p_t"
+      ],
+      "reported": ".137",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB clogpop beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "clogpop",
+        "beta"
+      ],
+      "reported": ".194",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB clogpop cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "clogpop",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".031",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB clogpop cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "clogpop",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".356",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB clogpop p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "clogpop",
+        "p_t"
+      ],
+      "reported": ".021",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB GDP_PER_CAP beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "beta"
+      ],
+      "reported": ".173",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB GDP_PER_CAP cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".026",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB GDP_PER_CAP cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".320",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB GDP_PER_CAP p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "p_t"
+      ],
+      "reported": ".023",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB POP_DENSITY beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "POP_DENSITY",
+        "beta"
+      ],
+      "reported": ".149",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB POP_DENSITY cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "POP_DENSITY",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".015",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB POP_DENSITY cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "POP_DENSITY",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".283",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB POP_DENSITY p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "POP_DENSITY",
+        "p_t"
+      ],
+      "reported": ".031",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_North beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_North",
+        "beta"
+      ],
+      "reported": "-.040",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_North cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_North",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.181",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_North cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_North",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".102",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_North p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_North",
+        "p_t"
+      ],
+      "reported": ".569",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_Southeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Southeast",
+        "beta"
+      ],
+      "reported": "-.043",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_Southeast cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Southeast",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.277",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_Southeast cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Southeast",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".190",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB REGION_Southeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Southeast",
+        "p_t"
+      ],
+      "reported": ".707",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB LTE_ACCESS_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "beta"
+      ],
+      "reported": "-.049",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB LTE_ACCESS_PER_100 cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.137",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB LTE_ACCESS_PER_100 cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".039",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB LTE_ACCESS_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "p_t"
+      ],
+      "reported": ".261",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB alpha",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "alpha"
+      ],
+      "reported": "4.42",
+      "decimals": 2,
+      "location": "Table 16"
+    },
+    {
+      "name": "Unconditional NB pseudo_r2_mcfadden",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "pseudo_r2_mcfadden"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 16"
+    },
+    {
+      "name": "SLP GDP_PER_CAP beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "beta"
+      ],
+      "reported": ".965",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "ratio"
+      ],
+      "reported": "2.62",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": "2.34",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "2.94",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": "1.43",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "4.81",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": "1.39",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "4.96",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "1.74",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "5.37",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP GDP_PER_CAP p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "p_t"
+      ],
+      "reported": ".004",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "beta"
+      ],
+      "reported": ".516",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "ratio"
+      ],
+      "reported": "1.68",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": "1.39",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "2.03",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": "1.24",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "2.26",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": "1.23",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "2.29",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "1.31",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "2.37",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_2024 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "p_t"
+      ],
+      "reported": ".002",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "beta"
+      ],
+      "reported": ".373",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "ratio"
+      ],
+      "reported": "1.45",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": "1.29",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "1.63",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": "1.18",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "1.78",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": "1.17",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.80",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "1.20",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.80",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "beta"
+      ],
+      "reported": ".229",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "ratio"
+      ],
+      "reported": "1.26",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": "1.16",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "1.36",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": "1.09",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "1.45",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": "1.09",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.46",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "1.08",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.41",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP FIBER_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "p_t"
+      ],
+      "reported": ".003",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "beta"
+      ],
+      "reported": ".027",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "ratio"
+      ],
+      "reported": "1.03",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".92",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "1.15",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".73",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "1.44",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".72",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.46",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.49",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.40",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Southeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "p_t"
+      ],
+      "reported": ".878",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "beta"
+      ],
+      "reported": "-.052",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "ratio"
+      ],
+      "reported": ".95",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".88",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "1.02",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".89",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "1.01",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".89",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.01",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.83",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.08",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP POP_DENSITY p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "p_t"
+      ],
+      "reported": ".115",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "beta"
+      ],
+      "reported": "-.172",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "ratio"
+      ],
+      "reported": ".84",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".77",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": ".92",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".74",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": ".95",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".74",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": ".96",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.68",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.93",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_North p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "p_t"
+      ],
+      "reported": ".013",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "beta"
+      ],
+      "reported": "-.405",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "ratio"
+      ],
+      "reported": ".67",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".60",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": ".74",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".45",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": ".99",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".44",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.01",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.39",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.07",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_South p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "p_t"
+      ],
+      "reported": ".055",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "beta"
+      ],
+      "reported": "-.548",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "ratio"
+      ],
+      "reported": ".58",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".51",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": ".66",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".44",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": ".76",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".44",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": ".77",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.41",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.73",
+      "decimals": 2,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP REGION_Northeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 18",
+      "operator": "lt"
+    },
+    {
+      "name": "SLP pseudo_r2_mcfadden",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "pseudo_r2_mcfadden"
+      ],
+      "reported": ".196",
+      "decimals": 3,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP bootstrap.valid",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "bootstrap",
+        "valid"
+      ],
+      "reported": "898",
+      "decimals": 0,
+      "location": "Table 18"
+    },
+    {
+      "name": "SLP pr_auc",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "pr_auc"
+      ],
+      "reported": ".623",
+      "decimals": 3,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP recall",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "recall"
+      ],
+      "reported": ".753",
+      "decimals": 3,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP specificity",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "specificity"
+      ],
+      "reported": ".713",
+      "decimals": 3,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP precision",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "precision"
+      ],
+      "reported": ".467",
+      "decimals": 3,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP f1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "f1"
+      ],
+      "reported": ".576",
+      "decimals": 3,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP accuracy",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "accuracy"
+      ],
+      "reported": ".723",
+      "decimals": 3,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP brier",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "brier"
+      ],
+      "reported": ".176",
+      "decimals": 3,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP confusion.tp",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "confusion",
+        "tp"
+      ],
+      "reported": "262",
+      "decimals": 0,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP confusion.fn",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "confusion",
+        "fn"
+      ],
+      "reported": "86",
+      "decimals": 0,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP confusion.fp",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "confusion",
+        "fp"
+      ],
+      "reported": "299",
+      "decimals": 0,
+      "location": "Table 19"
+    },
+    {
+      "name": "SLP confusion.tn",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "confusion",
+        "tn"
+      ],
+      "reported": "744",
+      "decimals": 0,
+      "location": "Table 19"
+    },
+    {
+      "name": "sum_p75 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "threshold"
+      ],
+      "reported": "1618",
+      "decimals": 0,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p75 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "auc"
+      ],
+      "reported": ".810",
+      "decimals": 3,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p75 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.62",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p75 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.68",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p75 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.45",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p75 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.26",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p75 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".58",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "max_p75 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "threshold"
+      ],
+      "reported": "1283",
+      "decimals": 0,
+      "location": "Table 20"
+    },
+    {
+      "name": "max_p75 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "auc"
+      ],
+      "reported": ".777",
+      "decimals": 3,
+      "location": "Table 20"
+    },
+    {
+      "name": "max_p75 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.49",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "max_p75 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.53",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "max_p75 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.41",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "max_p75 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.22",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "max_p75 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".57",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "mean_p75 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "threshold"
+      ],
+      "reported": "903",
+      "decimals": 0,
+      "location": "Table 20"
+    },
+    {
+      "name": "mean_p75 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "auc"
+      ],
+      "reported": ".789",
+      "decimals": 3,
+      "location": "Table 20"
+    },
+    {
+      "name": "mean_p75 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.64",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "mean_p75 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.53",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "mean_p75 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.48",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "mean_p75 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.18",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "mean_p75 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".57",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "first_p75 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "threshold"
+      ],
+      "reported": "1126",
+      "decimals": 0,
+      "location": "Table 20"
+    },
+    {
+      "name": "first_p75 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "auc"
+      ],
+      "reported": ".779",
+      "decimals": 3,
+      "location": "Table 20"
+    },
+    {
+      "name": "first_p75 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.21",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "first_p75 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.63",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "first_p75 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.45",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "first_p75 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.22",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "first_p75 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".55",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p70 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "threshold"
+      ],
+      "reported": "1272",
+      "decimals": 0,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p70 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "auc"
+      ],
+      "reported": ".797",
+      "decimals": 3,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p70 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.60",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p70 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.98",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p70 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.57",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p70 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.24",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p70 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".58",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p80 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "threshold"
+      ],
+      "reported": "2268",
+      "decimals": 0,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p80 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "auc"
+      ],
+      "reported": ".801",
+      "decimals": 3,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p80 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.39",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p80 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.52",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p80 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.30",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p80 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.24",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "sum_p80 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".56",
+      "decimals": 2,
+      "location": "Table 20"
+    },
+    {
+      "name": "SLP OLS R2",
+      "path": [
+        "extended",
+        "inference",
+        "slp_ols",
+        "r2"
+      ],
+      "reported": ".244",
+      "decimals": 3,
+      "location": "p. 49"
+    },
+    {
+      "name": "SLP training-only CV F1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "training_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": "0.549",
+      "decimals": 3,
+      "location": "pp. 36,47"
+    },
+    {
+      "name": "SLP training-only CV F1 SD",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "training_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": "0.016",
+      "decimals": 3,
+      "location": "pp. 36,47"
+    },
+    {
+      "name": "Count population permutation importance",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "42",
+        "permutation_importance",
+        "POP_2024"
+      ],
+      "reported": ".212",
+      "decimals": 3,
+      "location": "Figure 11"
+    },
+    {
+      "name": "Conditional log-intensity R2",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "r2"
+      ],
+      "reported": ".114",
+      "decimals": 3,
+      "location": "Table 11; RQ2 results, p. 45"
+    },
+    {
+      "name": "Conditional log-intensity interval lower",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "r2_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".068",
+      "decimals": 3,
+      "location": "Table 11; RQ2 results, p. 45"
+    },
+    {
+      "name": "Conditional log-intensity interval upper",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "r2_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".153",
+      "decimals": 3,
+      "location": "Table 11; RQ2 results, p. 45"
+    },
+    {
+      "name": "Conditional log-intensity MAE",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "mae"
+      ],
+      "reported": ".608",
+      "decimals": 3,
+      "location": "Table 11; RQ2 results, p. 45"
+    },
+    {
+      "name": "Conditional model rows",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "n"
+      ],
+      "reported": "2192",
+      "decimals": 0,
+      "location": "Table 11; RQ2 results, p. 45"
+    },
+    {
+      "name": "Conditional test rows",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "n_test"
+      ],
+      "reported": "548",
+      "decimals": 0,
+      "location": "Table 11; RQ2 results, p. 45"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "tables_4_5": "table04_dataset_structure.csv; table05_cleaning_log.csv",
+  "tables_8_to_20": "report-numbered table CSV files in this directory",
+  "tables_1_2_3_6_7": "conceptual/literature/source/dictionary/power documentation; not fitted numerical outputs",
+  "figure_1": "figure01_conceptual_framework.png",
+  "figure_2": "figure00b_source_merge.png",
+  "figures_3_to_9": [
+    "figure01_missingness.png",
+    "figure02_distributions.png",
+    "figure03_log1p.png",
+    "figure04_correlation.png",
+    "figure05_speed_by_stage.png",
+    "figure06_region_share.png",
+    "figure07_fiber_vs_sa.png"
+  ],
+  "figure_10": "figure10_workflow.png",
+  "figure_11": "figure11_permutation_importance.png",
+  "supplementary_figure_12": "figure12_roc_curves.png"
+}

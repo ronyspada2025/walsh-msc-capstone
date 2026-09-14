@@ -20,3 +20,13 @@ Thumbs.db
 .vscode/
 .idea/
 nb_err.log
+
+# Execution and recovery files
+.capstone-run-*/
+.capstone-backup-*/
+pipeline_execution.log
+update_execution.log
+reports/RUNNING.json
+reports/last_failed_run.txt
+reports/execution_status.json
+reports/.pipeline.lock

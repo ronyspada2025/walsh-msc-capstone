@@ -2,8 +2,8 @@
 
 Generated: `2026-09-14T02:22:24.316965+00:00`  
 Audit script version: `6.1`  
-Repository: `/Users/ronypedroso/Downloads/brazil-cloud-native-telecom-capstone`  
-Local raw release: `/Users/ronypedroso/Downloads/brazil-cloud-native-telecom-capstone/data/raw/2026-09-13_refresh`
+Repository: `local project workspace`  
+Local raw release: `data/raw/2026-09-13_refresh`
 
 > **Interpretation rule:** These files are current official source refreshes. They are not automatically the byte-identical historical extracts used to create the frozen merged dataset. A byte-identical claim is made only where SHA-256 comparison with an existing local historical file succeeds.
 

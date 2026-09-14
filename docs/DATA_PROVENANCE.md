@@ -13,14 +13,12 @@ the derived variables built by `final_pipeline.py`, and the grain after aggregat
 | Recorded by | `final_pipeline.py` writes `input_sha256` to `reports/tables/headline_results.json` on every run |
 | Verify locally | `python src/data_loader.py --check` |
 
-**Scope of reproducibility.** From the committed merged dataset onward, every number in the final
-report regenerates exactly. From the public sources onward, provenance is documented at the
-*dataset* level (this table), not at the *file* level: the specific extract files and download
-snapshots used to build the merged dataset were not archived at acquisition time (landing pages
-verified July 23, 2026; extracts acquired August 2026). An independent rebuild from Anatel and IBGE
-therefore recovers the same variables at a later reference date, not the byte-identical file.
-This is stated as a limitation in the final report; re-acquiring and archiving the raw extracts
-(URL, snapshot date, checksum) under `data/raw/` is the documented next step.
+**Scope of reproducibility.** The executable analysis starts from the committed
+municipal CSV and records its checksum, source hashes, software environment,
+results, and diagnostics. Official source links document dataset-level lineage.
+Original historical snapshots, complete acquisition periods, and the SLP registry
+grain are not authenticated by rerunning the municipal analysis. Newly downloaded
+data require a separately documented acquisition and validation process.
 
 ## Lineage table
 

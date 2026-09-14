@@ -1,0 +1,7 @@
+{
+  "nr_missing": 2,
+  "nr_observed_zero": 3377,
+  "historical_stage_no_nr_includes_unknown": 3379,
+  "historical_clean_column_count_is_before_targets": true,
+  "source_scope": "frozen merged input; historical raw snapshots and SLP grain not authenticated"
+}

@@ -1,0 +1,6949 @@
+{
+  "reference": "Final report: docs/final_report.pdf, Tables 4-20 and RQ2 results; 67 pages.",
+  "mode": "full",
+  "reference_sha256": "948bf2b41e90a40307f7e59c9487ff7c9ca23f428261f7503a8981f67bcd8135",
+  "summary": {
+    "MATCH": 417,
+    "DIFFERS": 0,
+    "MISSING_OR_INVALID": 0
+  },
+  "exact_match": true,
+  "metrics": [
+    {
+      "name": "Raw rows",
+      "path": [
+        "raw_shape",
+        "0"
+      ],
+      "reported": "10107",
+      "decimals": 0,
+      "location": "Tables 4-7",
+      "computed": 10107,
+      "computed_display": "10107",
+      "status": "MATCH"
+    },
+    {
+      "name": "Raw columns",
+      "path": [
+        "raw_shape",
+        "1"
+      ],
+      "reported": "25",
+      "decimals": 0,
+      "location": "Tables 4-7",
+      "computed": 25,
+      "computed_display": "25",
+      "status": "MATCH"
+    },
+    {
+      "name": "Clean rows",
+      "path": [
+        "clean_rows"
+      ],
+      "reported": "5571",
+      "decimals": 0,
+      "location": "Tables 4-7",
+      "computed": 5571,
+      "computed_display": "5571",
+      "status": "MATCH"
+    },
+    {
+      "name": "Model rows",
+      "path": [
+        "model_n"
+      ],
+      "reported": "5564",
+      "decimals": 0,
+      "location": "Tables 4-7",
+      "computed": 5564,
+      "computed_display": "5564",
+      "status": "MATCH"
+    },
+    {
+      "name": "Exact duplicates",
+      "path": [
+        "exact_duplicate_rows_dropped"
+      ],
+      "reported": "193",
+      "decimals": 0,
+      "location": "Tables 4-7",
+      "computed": 193,
+      "computed_display": "193",
+      "status": "MATCH"
+    },
+    {
+      "name": "Duplicate keys",
+      "path": [
+        "duplicate_key_rows"
+      ],
+      "reported": "4343",
+      "decimals": 0,
+      "location": "Tables 4-7",
+      "computed": 4343,
+      "computed_display": "4343",
+      "status": "MATCH"
+    },
+    {
+      "name": "Columns before targets",
+      "path": [
+        "clean_columns"
+      ],
+      "reported": "42",
+      "decimals": 0,
+      "location": "Tables 4-7",
+      "computed": 42,
+      "computed_display": "42",
+      "status": "MATCH"
+    },
+    {
+      "name": "Structural complete cases",
+      "path": [
+        "complete_cases"
+      ],
+      "reported": "5565",
+      "decimals": 0,
+      "location": "Tables 4-7",
+      "computed": 5565,
+      "computed_display": "5565",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_naive_p75 accuracy",
+      "path": [
+        "rq1_naive_p75",
+        "accuracy"
+      ],
+      "reported": ".930",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.9302659956865564,
+      "computed_display": "0.930",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_naive_p75 f1",
+      "path": [
+        "rq1_naive_p75",
+        "f1"
+      ],
+      "reported": ".835",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.8353140916808149,
+      "computed_display": "0.835",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_naive_p75 roc_auc",
+      "path": [
+        "rq1_naive_p75",
+        "roc_auc"
+      ],
+      "reported": ".965",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.9653985904556419,
+      "computed_display": "0.965",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_naive_p75 positive_share",
+      "path": [
+        "rq1_naive_p75",
+        "positive_share"
+      ],
+      "reported": ".225",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.22483824586628326,
+      "computed_display": "0.225",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p75 accuracy",
+      "path": [
+        "rq1_leakage_free_p75",
+        "accuracy"
+      ],
+      "reported": ".915",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.9151689432063264,
+      "computed_display": "0.915",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p75 f1",
+      "path": [
+        "rq1_leakage_free_p75",
+        "f1"
+      ],
+      "reported": ".808",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.8078175895765473,
+      "computed_display": "0.808",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p75 roc_auc",
+      "path": [
+        "rq1_leakage_free_p75",
+        "roc_auc"
+      ],
+      "reported": ".927",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.9266983586928816,
+      "computed_display": "0.927",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p75 positive_share",
+      "path": [
+        "rq1_leakage_free_p75",
+        "positive_share"
+      ],
+      "reported": ".225",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.22483824586628326,
+      "computed_display": "0.225",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p70 accuracy",
+      "path": [
+        "rq1_leakage_free_p70",
+        "accuracy"
+      ],
+      "reported": ".889",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.8892882818116463,
+      "computed_display": "0.889",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p70 f1",
+      "path": [
+        "rq1_leakage_free_p70",
+        "f1"
+      ],
+      "reported": ".768",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.7680722891566265,
+      "computed_display": "0.768",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p70 roc_auc",
+      "path": [
+        "rq1_leakage_free_p70",
+        "roc_auc"
+      ],
+      "reported": ".903",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.9029431011265122,
+      "computed_display": "0.903",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p70 positive_share",
+      "path": [
+        "rq1_leakage_free_p70",
+        "positive_share"
+      ],
+      "reported": ".257",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.25718907260963336,
+      "computed_display": "0.257",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p80 accuracy",
+      "path": [
+        "rq1_leakage_free_p80",
+        "accuracy"
+      ],
+      "reported": ".922",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.9223580158159598,
+      "computed_display": "0.922",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p80 f1",
+      "path": [
+        "rq1_leakage_free_p80",
+        "f1"
+      ],
+      "reported": ".778",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.7777777777777778,
+      "computed_display": "0.778",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p80 roc_auc",
+      "path": [
+        "rq1_leakage_free_p80",
+        "roc_auc"
+      ],
+      "reported": ".925",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.9249036495861122,
+      "computed_display": "0.925",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_leakage_free_p80 positive_share",
+      "path": [
+        "rq1_leakage_free_p80",
+        "positive_share"
+      ],
+      "reported": ".191",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.19051042415528396,
+      "computed_display": "0.191",
+      "status": "MATCH"
+    },
+    {
+      "name": "Per-capita count-settings accuracy",
+      "path": [
+        "revision",
+        "rq1_per_capita_p75",
+        "accuracy"
+      ],
+      "reported": ".813",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.8130841121495327,
+      "computed_display": "0.813",
+      "status": "MATCH"
+    },
+    {
+      "name": "Per-capita count-settings f1",
+      "path": [
+        "revision",
+        "rq1_per_capita_p75",
+        "f1"
+      ],
+      "reported": ".590",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.5899053627760252,
+      "computed_display": "0.590",
+      "status": "MATCH"
+    },
+    {
+      "name": "Per-capita count-settings roc_auc",
+      "path": [
+        "revision",
+        "rq1_per_capita_p75",
+        "roc_auc"
+      ],
+      "reported": ".818",
+      "decimals": 3,
+      "location": "Table 12",
+      "computed": 0.8175080724259154,
+      "computed_display": "0.818",
+      "status": "MATCH"
+    },
+    {
+      "name": "sa_p70",
+      "path": [
+        "sa_p70"
+      ],
+      "reported": "6",
+      "decimals": 0,
+      "location": "EDA pp. 28-33",
+      "computed": 6.0,
+      "computed_display": "6",
+      "status": "MATCH"
+    },
+    {
+      "name": "sa_p75",
+      "path": [
+        "sa_p75"
+      ],
+      "reported": "9",
+      "decimals": 0,
+      "location": "EDA pp. 28-33",
+      "computed": 9.0,
+      "computed_display": "9",
+      "status": "MATCH"
+    },
+    {
+      "name": "sa_p80",
+      "path": [
+        "sa_p80"
+      ],
+      "reported": "12",
+      "decimals": 0,
+      "location": "EDA pp. 28-33",
+      "computed": 12.0,
+      "computed_display": "12",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp_p75",
+      "path": [
+        "slp_p75"
+      ],
+      "reported": "1618",
+      "decimals": 0,
+      "location": "EDA pp. 28-33",
+      "computed": 1618.3386824338081,
+      "computed_display": "1618",
+      "status": "MATCH"
+    },
+    {
+      "name": "anova_f",
+      "path": [
+        "anova_f"
+      ],
+      "reported": "691.4",
+      "decimals": 1,
+      "location": "EDA pp. 28-33",
+      "computed": 691.3697048431554,
+      "computed_display": "691.4",
+      "status": "MATCH"
+    },
+    {
+      "name": "corr_speed_nr",
+      "path": [
+        "corr_speed_nr"
+      ],
+      "reported": ".61",
+      "decimals": 2,
+      "location": "EDA pp. 28-33",
+      "computed": 0.6110935300400808,
+      "computed_display": "0.61",
+      "status": "MATCH"
+    },
+    {
+      "name": "corr_speed_density",
+      "path": [
+        "corr_speed_density"
+      ],
+      "reported": ".36",
+      "decimals": 2,
+      "location": "EDA pp. 28-33",
+      "computed": 0.3639549530394879,
+      "computed_display": "0.36",
+      "status": "MATCH"
+    },
+    {
+      "name": "Regional presence South",
+      "path": [
+        "regional_nr_share",
+        "South"
+      ],
+      "reported": "46.8",
+      "decimals": 1,
+      "location": "Figure 8",
+      "computed": 46.8,
+      "computed_display": "46.8",
+      "status": "MATCH"
+    },
+    {
+      "name": "Regional presence Northeast",
+      "path": [
+        "regional_nr_share",
+        "Northeast"
+      ],
+      "reported": "38.7",
+      "decimals": 1,
+      "location": "Figure 8",
+      "computed": 38.7,
+      "computed_display": "38.7",
+      "status": "MATCH"
+    },
+    {
+      "name": "Regional presence Southeast",
+      "path": [
+        "regional_nr_share",
+        "Southeast"
+      ],
+      "reported": "37.6",
+      "decimals": 1,
+      "location": "Figure 8",
+      "computed": 37.6,
+      "computed_display": "37.6",
+      "status": "MATCH"
+    },
+    {
+      "name": "Regional presence North",
+      "path": [
+        "regional_nr_share",
+        "North"
+      ],
+      "reported": "34.9",
+      "decimals": 1,
+      "location": "Figure 8",
+      "computed": 34.9,
+      "computed_display": "34.9",
+      "status": "MATCH"
+    },
+    {
+      "name": "Regional presence Center-West",
+      "path": [
+        "regional_nr_share",
+        "Center-West"
+      ],
+      "reported": "33.3",
+      "decimals": 1,
+      "location": "Figure 8",
+      "computed": 33.3,
+      "computed_display": "33.3",
+      "status": "MATCH"
+    },
+    {
+      "name": "count 42.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "42",
+        "auc"
+      ],
+      "reported": ".927",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.9266983586928816,
+      "computed_display": "0.927",
+      "status": "MATCH"
+    },
+    {
+      "name": "count 42.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".906",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.9059656136459378,
+      "computed_display": "0.906",
+      "status": "MATCH"
+    },
+    {
+      "name": "count 42.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".945",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.9445820342968488,
+      "computed_display": "0.945",
+      "status": "MATCH"
+    },
+    {
+      "name": "count repeated_cv.roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "repeated_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".920",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.9196768904514915,
+      "computed_display": "0.920",
+      "status": "MATCH"
+    },
+    {
+      "name": "count repeated_cv.roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "repeated_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".009",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.008727211079484485,
+      "computed_display": "0.009",
+      "status": "MATCH"
+    },
+    {
+      "name": "count repeated_cv.f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "repeated_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".776",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.7764589454131169,
+      "computed_display": "0.776",
+      "status": "MATCH"
+    },
+    {
+      "name": "count repeated_cv.f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "repeated_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".020",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.02019191715060711,
+      "computed_display": "0.020",
+      "status": "MATCH"
+    },
+    {
+      "name": "count 2026.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "2026",
+        "auc"
+      ],
+      "reported": ".919",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.9190993853248531,
+      "computed_display": "0.919",
+      "status": "MATCH"
+    },
+    {
+      "name": "count 2026.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".899",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8985392162853225,
+      "computed_display": "0.899",
+      "status": "MATCH"
+    },
+    {
+      "name": "count 2026.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".938",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.938089021645232,
+      "computed_display": "0.938",
+      "status": "MATCH"
+    },
+    {
+      "name": "count 2026.f1",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "2026",
+        "f1"
+      ],
+      "reported": ".773",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.773109243697479,
+      "computed_display": "0.773",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap 42.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "42",
+        "auc"
+      ],
+      "reported": ".817",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8168027683186211,
+      "computed_display": "0.817",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap 42.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".790",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.7901703662647814,
+      "computed_display": "0.790",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap 42.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".845",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.844814478786391,
+      "computed_display": "0.845",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap repeated_cv.roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "repeated_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".824",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8236423865763308,
+      "computed_display": "0.824",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap repeated_cv.roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "repeated_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.017401154738405998,
+      "computed_display": "0.017",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap repeated_cv.f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "repeated_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".603",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.6032511778251688,
+      "computed_display": "0.603",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap repeated_cv.f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "repeated_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".024",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.02378582346359546,
+      "computed_display": "0.024",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap 2026.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "2026",
+        "auc"
+      ],
+      "reported": ".825",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8252306013819553,
+      "computed_display": "0.825",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap 2026.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "0.799",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.7991126197767919,
+      "computed_display": "0.799",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap 2026.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.849",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8492561900478253,
+      "computed_display": "0.849",
+      "status": "MATCH"
+    },
+    {
+      "name": "percap 2026.f1",
+      "path": [
+        "extended",
+        "predictive",
+        "percap",
+        "2026",
+        "f1"
+      ],
+      "reported": ".590",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.5901639344262295,
+      "computed_display": "0.590",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence 42.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "42",
+        "auc"
+      ],
+      "reported": ".849",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8491982059208077,
+      "computed_display": "0.849",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence 42.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "0.828",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8275183967508803,
+      "computed_display": "0.828",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence 42.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.869",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8692100190047622,
+      "computed_display": "0.869",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence repeated_cv.roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "repeated_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".849",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8493754337492357,
+      "computed_display": "0.849",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence repeated_cv.roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "repeated_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".014",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.013902841320487264,
+      "computed_display": "0.014",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence repeated_cv.f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "repeated_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".720",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.7202656554156301,
+      "computed_display": "0.720",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence repeated_cv.f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "repeated_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".016",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.01645923409906759,
+      "computed_display": "0.016",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence 2026.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "2026",
+        "auc"
+      ],
+      "reported": ".844",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8438276575663906,
+      "computed_display": "0.844",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence 2026.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".821",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8205272963254222,
+      "computed_display": "0.821",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence 2026.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.865",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8652405717427207,
+      "computed_display": "0.865",
+      "status": "MATCH"
+    },
+    {
+      "name": "presence 2026.f1",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "2026",
+        "f1"
+      ],
+      "reported": ".707",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.7069306930693069,
+      "computed_display": "0.707",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp 42.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "auc"
+      ],
+      "reported": ".810",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8098213596940743,
+      "computed_display": "0.810",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp 42.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "0.782",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.7822613022582213,
+      "computed_display": "0.782",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp 42.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.835",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8347685796352355,
+      "computed_display": "0.835",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp repeated_cv.roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "repeated_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".798",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.7984594357396102,
+      "computed_display": "0.798",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp repeated_cv.roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "repeated_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".010",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.010290311327484248,
+      "computed_display": "0.010",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp repeated_cv.f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "repeated_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".557",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.5565358790782652,
+      "computed_display": "0.557",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp repeated_cv.f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "repeated_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".013",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.013320259398453285,
+      "computed_display": "0.013",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp 2026.auc",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "2026",
+        "auc"
+      ],
+      "reported": ".780",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.7799368532416437,
+      "computed_display": "0.780",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp 2026.auc_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "0.752",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.751973022727951,
+      "computed_display": "0.752",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp 2026.auc_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "2026",
+        "auc_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": "0.808",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.8077589547535584,
+      "computed_display": "0.808",
+      "status": "MATCH"
+    },
+    {
+      "name": "slp 2026.f1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "2026",
+        "f1"
+      ],
+      "reported": ".534",
+      "decimals": 3,
+      "location": "Table 14",
+      "computed": 0.5337690631808278,
+      "computed_display": "0.534",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_cv_random_vs_state random_stratified f1.mean",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "random_stratified",
+        "f1",
+        "mean"
+      ],
+      "reported": ".775",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.7749988581902815,
+      "computed_display": "0.775",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_cv_random_vs_state random_stratified f1.sd",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "random_stratified",
+        "f1",
+        "sd"
+      ],
+      "reported": ".014",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.013848679771459796,
+      "computed_display": "0.014",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_cv_random_vs_state random_stratified roc_auc.mean",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "random_stratified",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".919",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.9185909036080396,
+      "computed_display": "0.919",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_cv_random_vs_state random_stratified roc_auc.sd",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "random_stratified",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".003",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.0028855207063441866,
+      "computed_display": "0.003",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_cv_random_vs_state grouped_by_state f1.mean",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "grouped_by_state",
+        "f1",
+        "mean"
+      ],
+      "reported": ".766",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.7656643060805427,
+      "computed_display": "0.766",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_cv_random_vs_state grouped_by_state f1.sd",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "grouped_by_state",
+        "f1",
+        "sd"
+      ],
+      "reported": ".047",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.047176830377605644,
+      "computed_display": "0.047",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_cv_random_vs_state grouped_by_state roc_auc.mean",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "grouped_by_state",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".909",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.9085643407539387,
+      "computed_display": "0.909",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq1_cv_random_vs_state grouped_by_state roc_auc.sd",
+      "path": [
+        "revision",
+        "rq1_cv_random_vs_state",
+        "grouped_by_state",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".023",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.022526000716681996,
+      "computed_display": "0.023",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq4_cv_random_vs_state random_stratified f1.mean",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "random_stratified",
+        "f1",
+        "mean"
+      ],
+      "reported": ".556",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.5561285505180041,
+      "computed_display": "0.556",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq4_cv_random_vs_state random_stratified f1.sd",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "random_stratified",
+        "f1",
+        "sd"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.016756312236672385,
+      "computed_display": "0.017",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq4_cv_random_vs_state random_stratified roc_auc.mean",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "random_stratified",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".799",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.7988660206752045,
+      "computed_display": "0.799",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq4_cv_random_vs_state random_stratified roc_auc.sd",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "random_stratified",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.01662537434386521,
+      "computed_display": "0.017",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq4_cv_random_vs_state grouped_by_state f1.mean",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "grouped_by_state",
+        "f1",
+        "mean"
+      ],
+      "reported": ".466",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.46614133446344963,
+      "computed_display": "0.466",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq4_cv_random_vs_state grouped_by_state f1.sd",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "grouped_by_state",
+        "f1",
+        "sd"
+      ],
+      "reported": ".152",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.15209853870020704,
+      "computed_display": "0.152",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq4_cv_random_vs_state grouped_by_state roc_auc.mean",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "grouped_by_state",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".758",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.7582899547089013,
+      "computed_display": "0.758",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq4_cv_random_vs_state grouped_by_state roc_auc.sd",
+      "path": [
+        "revision",
+        "rq4_cv_random_vs_state",
+        "grouped_by_state",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".067",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.06731699989304737,
+      "computed_display": "0.067",
+      "status": "MATCH"
+    },
+    {
+      "name": "Presence state CV roc_auc.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "state_cv",
+        "roc_auc",
+        "mean"
+      ],
+      "reported": ".839",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.8389959551643447,
+      "computed_display": "0.839",
+      "status": "MATCH"
+    },
+    {
+      "name": "Presence state CV roc_auc.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "state_cv",
+        "roc_auc",
+        "sd"
+      ],
+      "reported": ".035",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.03506863577918972,
+      "computed_display": "0.035",
+      "status": "MATCH"
+    },
+    {
+      "name": "Presence state CV f1.mean",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "state_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": ".710",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.7101646342124375,
+      "computed_display": "0.710",
+      "status": "MATCH"
+    },
+    {
+      "name": "Presence state CV f1.sd",
+      "path": [
+        "extended",
+        "predictive",
+        "presence",
+        "state_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": ".047",
+      "decimals": 3,
+      "location": "Table 13",
+      "computed": 0.04696949149068731,
+      "computed_display": "0.047",
+      "status": "MATCH"
+    },
+    {
+      "name": "raw ridge r2",
+      "path": [
+        "extended",
+        "ridge",
+        "raw",
+        "r2"
+      ],
+      "reported": ".02",
+      "decimals": 2,
+      "location": "Table 11",
+      "computed": 0.02320421914412818,
+      "computed_display": "0.02",
+      "status": "MATCH"
+    },
+    {
+      "name": "raw ridge r2_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "ridge",
+        "raw",
+        "r2_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "-.08",
+      "decimals": 2,
+      "location": "Table 11",
+      "computed": -0.07728906087311262,
+      "computed_display": "-0.08",
+      "status": "MATCH"
+    },
+    {
+      "name": "raw ridge r2_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "ridge",
+        "raw",
+        "r2_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".09",
+      "decimals": 2,
+      "location": "Table 11",
+      "computed": 0.09339124220251237,
+      "computed_display": "0.09",
+      "status": "MATCH"
+    },
+    {
+      "name": "log ridge r2",
+      "path": [
+        "extended",
+        "ridge",
+        "log",
+        "r2"
+      ],
+      "reported": ".06",
+      "decimals": 2,
+      "location": "Table 11",
+      "computed": 0.061421039195975635,
+      "computed_display": "0.06",
+      "status": "MATCH"
+    },
+    {
+      "name": "log ridge r2_bootstrap.ci.0",
+      "path": [
+        "extended",
+        "ridge",
+        "log",
+        "r2_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": "-0.14",
+      "decimals": 2,
+      "location": "Table 11",
+      "computed": -0.14047033888070265,
+      "computed_display": "-0.14",
+      "status": "MATCH"
+    },
+    {
+      "name": "log ridge r2_bootstrap.ci.1",
+      "path": [
+        "extended",
+        "ridge",
+        "log",
+        "r2_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".18",
+      "decimals": 2,
+      "location": "Table 11",
+      "computed": 0.17544943339270735,
+      "computed_display": "0.18",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq3_best_k",
+      "path": [
+        "rq3_best_k"
+      ],
+      "reported": "2",
+      "decimals": 0,
+      "location": "Table 17 / slide 22",
+      "computed": 2,
+      "computed_display": "2",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq3_silhouettes.2",
+      "path": [
+        "rq3_silhouettes",
+        "2"
+      ],
+      "reported": ".305",
+      "decimals": 3,
+      "location": "Table 17 / slide 22",
+      "computed": 0.3047367023889025,
+      "computed_display": "0.305",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq3_ari_mean",
+      "path": [
+        "rq3_ari_mean"
+      ],
+      "reported": ".99",
+      "decimals": 2,
+      "location": "Table 17 / slide 22",
+      "computed": 0.9881025690911148,
+      "computed_display": "0.99",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq3_ari_sd",
+      "path": [
+        "rq3_ari_sd"
+      ],
+      "reported": ".01",
+      "decimals": 2,
+      "location": "Table 17 / slide 22",
+      "computed": 0.0062823410167349904,
+      "computed_display": "0.01",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq3_chi2",
+      "path": [
+        "rq3_chi2"
+      ],
+      "reported": "254.1",
+      "decimals": 1,
+      "location": "Table 17 / slide 22",
+      "computed": 254.14126041900374,
+      "computed_display": "254.1",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq3_chi2_dof",
+      "path": [
+        "rq3_chi2_dof"
+      ],
+      "reported": "4",
+      "decimals": 0,
+      "location": "Table 17 / slide 22",
+      "computed": 4,
+      "computed_display": "4",
+      "status": "MATCH"
+    },
+    {
+      "name": "revision.rq3_cramers_v",
+      "path": [
+        "revision",
+        "rq3_cramers_v"
+      ],
+      "reported": ".21",
+      "decimals": 2,
+      "location": "Table 17 / slide 22",
+      "computed": 0.21370023778566619,
+      "computed_display": "0.21",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq3_cluster_sizes.0",
+      "path": [
+        "rq3_cluster_sizes",
+        "0"
+      ],
+      "reported": "1231",
+      "decimals": 0,
+      "location": "Table 17 / slide 22",
+      "computed": 1231,
+      "computed_display": "1231",
+      "status": "MATCH"
+    },
+    {
+      "name": "rq3_cluster_sizes.1",
+      "path": [
+        "rq3_cluster_sizes",
+        "1"
+      ],
+      "reported": "4334",
+      "decimals": 0,
+      "location": "Table 17 / slide 22",
+      "computed": 4334,
+      "computed_display": "4334",
+      "status": "MATCH"
+    },
+    {
+      "name": "GDP_PER_CAP cluster 0",
+      "path": [
+        "rq3_profiles",
+        "GDP_PER_CAP",
+        "0"
+      ],
+      "reported": "47958.6",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 47958.6,
+      "computed_display": "47958.6",
+      "status": "MATCH"
+    },
+    {
+      "name": "GDP_PER_CAP cluster 1",
+      "path": [
+        "rq3_profiles",
+        "GDP_PER_CAP",
+        "1"
+      ],
+      "reported": "29300.4",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 29300.4,
+      "computed_display": "29300.4",
+      "status": "MATCH"
+    },
+    {
+      "name": "POP_DENSITY cluster 0",
+      "path": [
+        "rq3_profiles",
+        "POP_DENSITY",
+        "0"
+      ],
+      "reported": "419.6",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 419.6,
+      "computed_display": "419.6",
+      "status": "MATCH"
+    },
+    {
+      "name": "POP_DENSITY cluster 1",
+      "path": [
+        "rq3_profiles",
+        "POP_DENSITY",
+        "1"
+      ],
+      "reported": "29.9",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 29.9,
+      "computed_display": "29.9",
+      "status": "MATCH"
+    },
+    {
+      "name": "FIBER_PER_100 cluster 0",
+      "path": [
+        "rq3_profiles",
+        "FIBER_PER_100",
+        "0"
+      ],
+      "reported": "155.4",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 155.4,
+      "computed_display": "155.4",
+      "status": "MATCH"
+    },
+    {
+      "name": "FIBER_PER_100 cluster 1",
+      "path": [
+        "rq3_profiles",
+        "FIBER_PER_100",
+        "1"
+      ],
+      "reported": "82.8",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 82.8,
+      "computed_display": "82.8",
+      "status": "MATCH"
+    },
+    {
+      "name": "LTE_ACCESS_PER_100 cluster 0",
+      "path": [
+        "rq3_profiles",
+        "LTE_ACCESS_PER_100",
+        "0"
+      ],
+      "reported": "78.0",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 78.0,
+      "computed_display": "78.0",
+      "status": "MATCH"
+    },
+    {
+      "name": "LTE_ACCESS_PER_100 cluster 1",
+      "path": [
+        "rq3_profiles",
+        "LTE_ACCESS_PER_100",
+        "1"
+      ],
+      "reported": "76.6",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 76.6,
+      "computed_display": "76.6",
+      "status": "MATCH"
+    },
+    {
+      "name": "NR_ACCESS_PER_100 cluster 0",
+      "path": [
+        "rq3_profiles",
+        "NR_ACCESS_PER_100",
+        "0"
+      ],
+      "reported": "29.2",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 29.2,
+      "computed_display": "29.2",
+      "status": "MATCH"
+    },
+    {
+      "name": "NR_ACCESS_PER_100 cluster 1",
+      "path": [
+        "rq3_profiles",
+        "NR_ACCESS_PER_100",
+        "1"
+      ],
+      "reported": "0.7",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 0.7,
+      "computed_display": "0.7",
+      "status": "MATCH"
+    },
+    {
+      "name": "AVG_DL_SPEED cluster 0",
+      "path": [
+        "rq3_profiles",
+        "AVG_DL_SPEED",
+        "0"
+      ],
+      "reported": "64.4",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 64.4,
+      "computed_display": "64.4",
+      "status": "MATCH"
+    },
+    {
+      "name": "AVG_DL_SPEED cluster 1",
+      "path": [
+        "rq3_profiles",
+        "AVG_DL_SPEED",
+        "1"
+      ],
+      "reported": "38.0",
+      "decimals": 1,
+      "location": "Table 17",
+      "computed": 38.0,
+      "computed_display": "38.0",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "beta"
+      ],
+      "reported": ".222",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.22221179427958357,
+      "computed_display": "0.222",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": ".171",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.1707860744253198,
+      "computed_display": "0.171",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".274",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.27363751413384735,
+      "computed_display": "0.274",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".047",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.04725944886303385,
+      "computed_display": "0.047",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".397",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.3971641396961333,
+      "computed_display": "0.397",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.118",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.11765650647418255,
+      "computed_display": "0.118",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.460",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.4596472391121178,
+      "computed_display": "0.460",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "ratio"
+      ],
+      "reported": "1.25",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 1.2488358461452127,
+      "computed_display": "1.25",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB POP_DENSITY p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "POP_DENSITY",
+        "p_t"
+      ],
+      "reported": ".015",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.014797248246792322,
+      "computed_display": "0.015",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "beta"
+      ],
+      "reported": ".148",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.1475462790889556,
+      "computed_display": "0.148",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": ".077",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.07650402502694213,
+      "computed_display": "0.077",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".219",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.21858853315096904,
+      "computed_display": "0.219",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".013",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.012811317103836872,
+      "computed_display": "0.013",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".282",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.2822812410740743,
+      "computed_display": "0.282",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.536",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.5360983817040126,
+      "computed_display": "-0.536",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.294",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.29443925226365225,
+      "computed_display": "0.294",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "ratio"
+      ],
+      "reported": "1.16",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 1.1589869204474275,
+      "computed_display": "1.16",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_South p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_South",
+        "p_t"
+      ],
+      "reported": ".033",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.033065512946192685,
+      "computed_display": "0.033",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "beta"
+      ],
+      "reported": ".134",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.13399465262327614,
+      "computed_display": "0.134",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": ".090",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.089969282789804,
+      "computed_display": "0.090",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".178",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.1780200224567483,
+      "computed_display": "0.178",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".069",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.06900895121569368,
+      "computed_display": "0.069",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".199",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.19898035403085862,
+      "computed_display": "0.199",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.082",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.08180899278479187,
+      "computed_display": "0.082",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.198",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.19828716621421608,
+      "computed_display": "0.198",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "ratio"
+      ],
+      "reported": "1.14",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 1.1433867055088442,
+      "computed_display": "1.14",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB FIBER_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "FIBER_PER_100",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 15",
+      "operator": "lt",
+      "computed": 0.00025053596475817566,
+      "computed_display": "0.000",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "beta"
+      ],
+      "reported": ".104",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.10436282688287238,
+      "computed_display": "0.104",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": ".058",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.058421336012895786,
+      "computed_display": "0.058",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".150",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.15030431775284897,
+      "computed_display": "0.150",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".064",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.06401662505454833,
+      "computed_display": "0.064",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".145",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.14470902871119642,
+      "computed_display": "0.145",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.052",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.05172289330819883,
+      "computed_display": "0.052",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.150",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.15009986834188146,
+      "computed_display": "0.150",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "ratio"
+      ],
+      "reported": "1.11",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 1.110003120834466,
+      "computed_display": "1.11",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB GDP_PER_CAP p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 15",
+      "operator": "lt",
+      "computed": 1.4584829942623625e-05,
+      "computed_display": "0.000",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "beta"
+      ],
+      "reported": ".060",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.05972905162994651,
+      "computed_display": "0.060",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.012",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.011588778726597325,
+      "computed_display": "-0.012",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".131",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.13104688198649034,
+      "computed_display": "0.131",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.067",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.0674798719064938,
+      "computed_display": "-0.067",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".187",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.18693797516638683,
+      "computed_display": "0.187",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.691",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.6913018631678404,
+      "computed_display": "-0.691",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": ".198",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.19764607882210605,
+      "computed_display": "0.198",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "ratio"
+      ],
+      "reported": "1.06",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 1.0615488826366033,
+      "computed_display": "1.06",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Northeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Northeast",
+        "p_t"
+      ],
+      "reported": ".343",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.34336504836908954,
+      "computed_display": "0.343",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "beta"
+      ],
+      "reported": ".034",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.034391760755551934,
+      "computed_display": "0.034",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.004",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.004184673955253085,
+      "computed_display": "-0.004",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".073",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.07296819546635695,
+      "computed_display": "0.073",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.035",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.034504404885533024,
+      "computed_display": "-0.035",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".103",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.10328792639663689,
+      "computed_display": "0.103",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.057",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.05654740068440842,
+      "computed_display": "-0.057",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.170",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.1700929223957449,
+      "computed_display": "0.170",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "ratio"
+      ],
+      "reported": "1.03",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 1.0349899957779074,
+      "computed_display": "1.03",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB LTE_ACCESS_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "p_t"
+      ],
+      "reported": ".314",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.3143040350483526,
+      "computed_display": "0.314",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "beta"
+      ],
+      "reported": ".020",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.019857763273226123,
+      "computed_display": "0.020",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.050",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.049656763530046055,
+      "computed_display": "-0.050",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".089",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.0893722900764983,
+      "computed_display": "0.089",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.083",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.0834455315103015,
+      "computed_display": "-0.083",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".123",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.12316105805675374,
+      "computed_display": "0.123",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.674",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.6744631975898401,
+      "computed_display": "-0.674",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.206",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.20564427512538044,
+      "computed_display": "0.206",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "ratio"
+      ],
+      "reported": "1.02",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 1.0200562402470035,
+      "computed_display": "1.02",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_Southeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_Southeast",
+        "p_t"
+      ],
+      "reported": ".696",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.6959702220876137,
+      "computed_display": "0.696",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "beta"
+      ],
+      "reported": "-.019",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.01890115145245799,
+      "computed_display": "-0.019",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.068",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.06824838331984819,
+      "computed_display": "-0.068",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": ".030",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.03044608041493221,
+      "computed_display": "0.030",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.087",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.086617621781567,
+      "computed_display": "-0.087",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".049",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.04881531887665101,
+      "computed_display": "0.049",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.406",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.40581311037843115,
+      "computed_display": "-0.406",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.075",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.0747410607328001,
+      "computed_display": "0.075",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "ratio"
+      ],
+      "reported": ".98",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 0.981276355191369,
+      "computed_display": "0.98",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB REGION_North p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "REGION_North",
+        "p_t"
+      ],
+      "reported": ".571",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.5710717677153863,
+      "computed_display": "0.571",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop beta",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "beta"
+      ],
+      "reported": "-.139",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.13860379590763566,
+      "computed_display": "-0.139",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "conventional_ci",
+        "0"
+      ],
+      "reported": "-.168",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.16818451765390915,
+      "computed_display": "-0.168",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "conventional_ci",
+        "1"
+      ],
+      "reported": "-.109",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.10902307416136217,
+      "computed_display": "-0.109",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.270",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.26952719606474385,
+      "computed_display": "-0.270",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": "-.008",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.00768039575052748,
+      "computed_display": "-0.008",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "bootstrap_ci",
+        "0"
+      ],
+      "reported": "-0.244",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.24378445718985647,
+      "computed_display": "-0.244",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "bootstrap_ci",
+        "1"
+      ],
+      "reported": "-0.024",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": -0.02415168959352584,
+      "computed_display": "-0.024",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop ratio",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "ratio"
+      ],
+      "reported": ".87",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 0.8705728846766282,
+      "computed_display": "0.87",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB clogpop p_t",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "coefficients",
+        "clogpop",
+        "p_t"
+      ],
+      "reported": ".039",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.03882140510048859,
+      "computed_display": "0.039",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB n",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "n"
+      ],
+      "reported": "2192",
+      "decimals": 0,
+      "location": "Table 15",
+      "computed": 2192,
+      "computed_display": "2192",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB alpha",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "alpha"
+      ],
+      "reported": "0.65",
+      "decimals": 2,
+      "location": "Table 15",
+      "computed": 0.654574318096893,
+      "computed_display": "0.65",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB pseudo_r2_mcfadden",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "pseudo_r2_mcfadden"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 15",
+      "computed": 0.016908038969359662,
+      "computed_display": "0.017",
+      "status": "MATCH"
+    },
+    {
+      "name": "Truncated NB bootstrap.valid",
+      "path": [
+        "extended",
+        "inference",
+        "tnb",
+        "bootstrap",
+        "valid"
+      ],
+      "reported": "933",
+      "decimals": 0,
+      "location": "Table 15",
+      "computed": 933,
+      "computed_display": "933",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_South beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_South",
+        "beta"
+      ],
+      "reported": ".400",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.4004902810527605,
+      "computed_display": "0.400",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_South cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_South",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".129",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.1288245566336338,
+      "computed_display": "0.129",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_South cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_South",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".672",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.6721560054718873,
+      "computed_display": "0.672",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_South p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_South",
+        "p_t"
+      ],
+      "reported": ".005",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.0054678117393303725,
+      "computed_display": "0.005",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB FIBER_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "FIBER_PER_100",
+        "beta"
+      ],
+      "reported": ".302",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.30179641645466293,
+      "computed_display": "0.302",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB FIBER_PER_100 cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "FIBER_PER_100",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".140",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.1403130563962608,
+      "computed_display": "0.140",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB FIBER_PER_100 cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "FIBER_PER_100",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".463",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.46327977651306507,
+      "computed_display": "0.463",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB FIBER_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "FIBER_PER_100",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.000705727233022951,
+      "computed_display": "0.001",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_Northeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Northeast",
+        "beta"
+      ],
+      "reported": ".215",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.21472057129052927,
+      "computed_display": "0.215",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_Northeast cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Northeast",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.073",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": -0.07324573797772263,
+      "computed_display": "-0.073",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_Northeast cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Northeast",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".503",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.5026868805587812,
+      "computed_display": "0.503",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_Northeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Northeast",
+        "p_t"
+      ],
+      "reported": ".137",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.13743006420715573,
+      "computed_display": "0.137",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB clogpop beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "clogpop",
+        "beta"
+      ],
+      "reported": ".194",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.19356990252106954,
+      "computed_display": "0.194",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB clogpop cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "clogpop",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".031",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.031451810469903474,
+      "computed_display": "0.031",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB clogpop cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "clogpop",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".356",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.3556879945722356,
+      "computed_display": "0.356",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB clogpop p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "clogpop",
+        "p_t"
+      ],
+      "reported": ".021",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.021124714416010448,
+      "computed_display": "0.021",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB GDP_PER_CAP beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "beta"
+      ],
+      "reported": ".173",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.17279014953546365,
+      "computed_display": "0.173",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB GDP_PER_CAP cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".026",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.025568686399790513,
+      "computed_display": "0.026",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB GDP_PER_CAP cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".320",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.32001161267113676,
+      "computed_display": "0.320",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB GDP_PER_CAP p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "GDP_PER_CAP",
+        "p_t"
+      ],
+      "reported": ".023",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.02319469557172113,
+      "computed_display": "0.023",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB POP_DENSITY beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "POP_DENSITY",
+        "beta"
+      ],
+      "reported": ".149",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.14898791173274592,
+      "computed_display": "0.149",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB POP_DENSITY cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "POP_DENSITY",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": ".015",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.01501369779418732,
+      "computed_display": "0.015",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB POP_DENSITY cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "POP_DENSITY",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".283",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.2829621256713045,
+      "computed_display": "0.283",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB POP_DENSITY p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "POP_DENSITY",
+        "p_t"
+      ],
+      "reported": ".031",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.030656056920389054,
+      "computed_display": "0.031",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_North beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_North",
+        "beta"
+      ],
+      "reported": "-.040",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": -0.03975891978523561,
+      "computed_display": "-0.040",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_North cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_North",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.181",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": -0.1814759947438888,
+      "computed_display": "-0.181",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_North cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_North",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".102",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.10195815517341761,
+      "computed_display": "0.102",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_North p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_North",
+        "p_t"
+      ],
+      "reported": ".569",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.569114198005861,
+      "computed_display": "0.569",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_Southeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Southeast",
+        "beta"
+      ],
+      "reported": "-.043",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": -0.043139391735987485,
+      "computed_display": "-0.043",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_Southeast cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Southeast",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.277",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": -0.2765537770060576,
+      "computed_display": "-0.277",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_Southeast cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Southeast",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".190",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.19027499353408264,
+      "computed_display": "0.190",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB REGION_Southeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "REGION_Southeast",
+        "p_t"
+      ],
+      "reported": ".707",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.7071047592860832,
+      "computed_display": "0.707",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB LTE_ACCESS_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "beta"
+      ],
+      "reported": "-.049",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": -0.04906266718825105,
+      "computed_display": "-0.049",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB LTE_ACCESS_PER_100 cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "cluster_t_ci",
+        "0"
+      ],
+      "reported": "-.137",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": -0.13679290376609932,
+      "computed_display": "-0.137",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB LTE_ACCESS_PER_100 cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "cluster_t_ci",
+        "1"
+      ],
+      "reported": ".039",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.03866756938959721,
+      "computed_display": "0.039",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB LTE_ACCESS_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "p_t"
+      ],
+      "reported": ".261",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.2607966388957772,
+      "computed_display": "0.261",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB alpha",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "alpha"
+      ],
+      "reported": "4.42",
+      "decimals": 2,
+      "location": "Table 16",
+      "computed": 4.415001405949202,
+      "computed_display": "4.42",
+      "status": "MATCH"
+    },
+    {
+      "name": "Unconditional NB pseudo_r2_mcfadden",
+      "path": [
+        "extended",
+        "inference",
+        "nb",
+        "pseudo_r2_mcfadden"
+      ],
+      "reported": ".017",
+      "decimals": 3,
+      "location": "Table 16",
+      "computed": 0.017290688111886943,
+      "computed_display": "0.017",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "beta"
+      ],
+      "reported": ".965",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.9645658246308059,
+      "computed_display": "0.965",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "ratio"
+      ],
+      "reported": "2.62",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 2.623648285686034,
+      "computed_display": "2.62",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": "2.34",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 2.338865623293679,
+      "computed_display": "2.34",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "2.94",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 2.943106375341743,
+      "computed_display": "2.94",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": "1.43",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.4307613205247653,
+      "computed_display": "1.43",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "4.81",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 4.811096182316816,
+      "computed_display": "4.81",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": "1.39",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.3890958223837266,
+      "computed_display": "1.39",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "4.96",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 4.955403519370563,
+      "computed_display": "4.96",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "1.74",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.737041781404001,
+      "computed_display": "1.74",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "5.37",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 5.373665459221308,
+      "computed_display": "5.37",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP GDP_PER_CAP p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "GDP_PER_CAP",
+        "p_t"
+      ],
+      "reported": ".004",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.00441260738761682,
+      "computed_display": "0.004",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "beta"
+      ],
+      "reported": ".516",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.5161787586608821,
+      "computed_display": "0.516",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "ratio"
+      ],
+      "reported": "1.68",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.6756124808706079,
+      "computed_display": "1.68",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": "1.39",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.386027001217049,
+      "computed_display": "1.39",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "2.03",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 2.025701651976459,
+      "computed_display": "2.03",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": "1.24",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.2437151472338888,
+      "computed_display": "1.24",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "2.26",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 2.25749215348372,
+      "computed_display": "2.26",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": "1.23",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.2257769892347425,
+      "computed_display": "1.23",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "2.29",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 2.2905285469604033,
+      "computed_display": "2.29",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "1.31",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.3149837921020142,
+      "computed_display": "1.31",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "2.37",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 2.373472201135948,
+      "computed_display": "2.37",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_2024 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_2024",
+        "p_t"
+      ],
+      "reported": ".002",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.002217317439478859,
+      "computed_display": "0.002",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "beta"
+      ],
+      "reported": ".373",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.37261593490256556,
+      "computed_display": "0.373",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "ratio"
+      ],
+      "reported": "1.45",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.4515267520011808,
+      "computed_display": "1.45",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": "1.29",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.2906281149309398,
+      "computed_display": "1.29",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "1.63",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.6324841272250117,
+      "computed_display": "1.63",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": "1.18",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.1826784543192261,
+      "computed_display": "1.18",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "1.78",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.7814900610393625,
+      "computed_display": "1.78",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": "1.17",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.1709299061182128,
+      "computed_display": "1.17",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.80",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.7993646765414404,
+      "computed_display": "1.80",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "1.20",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.2009191162185084,
+      "computed_display": "1.20",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.80",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.8040799378818226,
+      "computed_display": "1.80",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP LTE_ACCESS_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "LTE_ACCESS_PER_100",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.0014358298660265012,
+      "computed_display": "0.001",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "beta"
+      ],
+      "reported": ".229",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.22921350632820006,
+      "computed_display": "0.229",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "ratio"
+      ],
+      "reported": "1.26",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.2576105181518578,
+      "computed_display": "1.26",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": "1.16",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.1648708792483207,
+      "computed_display": "1.16",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "1.36",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.3577334995160701,
+      "computed_display": "1.36",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": "1.09",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.0935537791556256,
+      "computed_display": "1.09",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "1.45",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.4462793193283876,
+      "computed_display": "1.45",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": "1.09",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.0861288867555638,
+      "computed_display": "1.09",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.46",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.4561662383279597,
+      "computed_display": "1.46",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "1.08",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.076463910032032,
+      "computed_display": "1.08",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.41",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.4095232436008307,
+      "computed_display": "1.41",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP FIBER_PER_100 p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "FIBER_PER_100",
+        "p_t"
+      ],
+      "reported": ".003",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.003479597589217372,
+      "computed_display": "0.003",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "beta"
+      ],
+      "reported": ".027",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.026613037297049887,
+      "computed_display": "0.027",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "ratio"
+      ],
+      "reported": "1.03",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.0269703266507835,
+      "computed_display": "1.03",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".92",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.9204386543365155,
+      "computed_display": "0.92",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "1.15",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.1458319865775939,
+      "computed_display": "1.15",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".73",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.734425616383847,
+      "computed_display": "0.73",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "1.44",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.4360447515626897,
+      "computed_display": "1.44",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".72",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.7225216293055031,
+      "computed_display": "0.72",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.46",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.4597044697955643,
+      "computed_display": "1.46",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.49",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.4872776835187647,
+      "computed_display": "0.49",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.40",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.4048578318651965,
+      "computed_display": "1.40",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Southeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Southeast",
+        "p_t"
+      ],
+      "reported": ".878",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.8775686056085048,
+      "computed_display": "0.878",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "beta"
+      ],
+      "reported": "-.052",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": -0.05226212952418245,
+      "computed_display": "-0.052",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "ratio"
+      ],
+      "reported": ".95",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.9490800523309709,
+      "computed_display": "0.95",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".88",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.8788775324784698,
+      "computed_display": "0.88",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": "1.02",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.0248901723456272,
+      "computed_display": "1.02",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".89",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.891266930571377,
+      "computed_display": "0.89",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": "1.01",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.0106432930874034,
+      "computed_display": "1.01",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".89",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.8885409448968306,
+      "computed_display": "0.89",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.01",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.0137438808035413,
+      "computed_display": "1.01",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.83",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.8271028269480757,
+      "computed_display": "0.83",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.08",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.077656723214883,
+      "computed_display": "1.08",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP POP_DENSITY p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "POP_DENSITY",
+        "p_t"
+      ],
+      "reported": ".115",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.11519363308209835,
+      "computed_display": "0.115",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "beta"
+      ],
+      "reported": "-.172",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": -0.17248087004410917,
+      "computed_display": "-0.172",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "ratio"
+      ],
+      "reported": ".84",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.8415743879387051,
+      "computed_display": "0.84",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".77",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.7666713801597259,
+      "computed_display": "0.77",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": ".92",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.9237953427801778,
+      "computed_display": "0.92",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".74",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.7417026085085068,
+      "computed_display": "0.74",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": ".95",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.9548941075704509,
+      "computed_display": "0.95",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".74",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.7371499240625291,
+      "computed_display": "0.74",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": ".96",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.96079159383367,
+      "computed_display": "0.96",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.68",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.6799381578160976,
+      "computed_display": "0.68",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.93",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.9258892578154055,
+      "computed_display": "0.93",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_North p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_North",
+        "p_t"
+      ],
+      "reported": ".013",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.012719725997401631,
+      "computed_display": "0.013",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "beta"
+      ],
+      "reported": "-.405",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": -0.40521213110400933,
+      "computed_display": "-0.405",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "ratio"
+      ],
+      "reported": ".67",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.6668353393370239,
+      "computed_display": "0.67",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".60",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.5998995370449463,
+      "computed_display": "0.60",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": ".74",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.741239728203704,
+      "computed_display": "0.74",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".45",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.4493217293856357,
+      "computed_display": "0.45",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": ".99",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.9896458165883205,
+      "computed_display": "0.99",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".44",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.44075828817084484,
+      "computed_display": "0.44",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": "1.01",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.0088735293761806,
+      "computed_display": "1.01",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.39",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.39155321078177246,
+      "computed_display": "0.39",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "1.07",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 1.0714295851780842,
+      "computed_display": "1.07",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_South p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_South",
+        "p_t"
+      ],
+      "reported": ".055",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.05472590686034964,
+      "computed_display": "0.055",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast beta",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "beta"
+      ],
+      "reported": "-.548",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": -0.5484186872243721,
+      "computed_display": "-0.548",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast ratio",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "ratio"
+      ],
+      "reported": ".58",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.5778628702128636,
+      "computed_display": "0.58",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast or_conventional_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_conventional_ci",
+        "0"
+      ],
+      "reported": ".51",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.5069780805701619,
+      "computed_display": "0.51",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast or_conventional_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_conventional_ci",
+        "1"
+      ],
+      "reported": ".66",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.6586586473227932,
+      "computed_display": "0.66",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast or_cluster_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_cluster_ci",
+        "0"
+      ],
+      "reported": ".44",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.4421891491923327,
+      "computed_display": "0.44",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast or_cluster_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_cluster_ci",
+        "1"
+      ],
+      "reported": ".76",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.7551643846995579,
+      "computed_display": "0.76",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast or_cluster_t_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_cluster_t_ci",
+        "0"
+      ],
+      "reported": ".44",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.43645928401528816,
+      "computed_display": "0.44",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast or_cluster_t_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_cluster_t_ci",
+        "1"
+      ],
+      "reported": ".77",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.7650782306625244,
+      "computed_display": "0.77",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast or_bootstrap_ci.0",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_bootstrap_ci",
+        "0"
+      ],
+      "reported": "0.41",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.40933772750162906,
+      "computed_display": "0.41",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast or_bootstrap_ci.1",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "or_bootstrap_ci",
+        "1"
+      ],
+      "reported": "0.73",
+      "decimals": 2,
+      "location": "Table 18",
+      "computed": 0.725688565231798,
+      "computed_display": "0.73",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP REGION_Northeast p_t",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "coefficients",
+        "REGION_Northeast",
+        "p_t"
+      ],
+      "reported": ".001",
+      "decimals": 3,
+      "location": "Table 18",
+      "operator": "lt",
+      "computed": 0.0004474188967341875,
+      "computed_display": "0.000",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP pseudo_r2_mcfadden",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "pseudo_r2_mcfadden"
+      ],
+      "reported": ".196",
+      "decimals": 3,
+      "location": "Table 18",
+      "computed": 0.19554498824536803,
+      "computed_display": "0.196",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP bootstrap.valid",
+      "path": [
+        "extended",
+        "inference",
+        "slp",
+        "bootstrap",
+        "valid"
+      ],
+      "reported": "898",
+      "decimals": 0,
+      "location": "Table 18",
+      "computed": 898,
+      "computed_display": "898",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP pr_auc",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "pr_auc"
+      ],
+      "reported": ".623",
+      "decimals": 3,
+      "location": "Table 19",
+      "computed": 0.6226691015455225,
+      "computed_display": "0.623",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP recall",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "recall"
+      ],
+      "reported": ".753",
+      "decimals": 3,
+      "location": "Table 19",
+      "computed": 0.7528735632183908,
+      "computed_display": "0.753",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP specificity",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "specificity"
+      ],
+      "reported": ".713",
+      "decimals": 3,
+      "location": "Table 19",
+      "computed": 0.713326941514861,
+      "computed_display": "0.713",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP precision",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "precision"
+      ],
+      "reported": ".467",
+      "decimals": 3,
+      "location": "Table 19",
+      "computed": 0.46702317290552586,
+      "computed_display": "0.467",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP f1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "f1"
+      ],
+      "reported": ".576",
+      "decimals": 3,
+      "location": "Table 19",
+      "computed": 0.5764576457645765,
+      "computed_display": "0.576",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP accuracy",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "accuracy"
+      ],
+      "reported": ".723",
+      "decimals": 3,
+      "location": "Table 19",
+      "computed": 0.7232207045291158,
+      "computed_display": "0.723",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP brier",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "brier"
+      ],
+      "reported": ".176",
+      "decimals": 3,
+      "location": "Table 19",
+      "computed": 0.17574756290557586,
+      "computed_display": "0.176",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP confusion.tp",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "confusion",
+        "tp"
+      ],
+      "reported": "262",
+      "decimals": 0,
+      "location": "Table 19",
+      "computed": 262,
+      "computed_display": "262",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP confusion.fn",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "confusion",
+        "fn"
+      ],
+      "reported": "86",
+      "decimals": 0,
+      "location": "Table 19",
+      "computed": 86,
+      "computed_display": "86",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP confusion.fp",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "confusion",
+        "fp"
+      ],
+      "reported": "299",
+      "decimals": 0,
+      "location": "Table 19",
+      "computed": 299,
+      "computed_display": "299",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP confusion.tn",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "confusion",
+        "tn"
+      ],
+      "reported": "744",
+      "decimals": 0,
+      "location": "Table 19",
+      "computed": 744,
+      "computed_display": "744",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p75 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "threshold"
+      ],
+      "reported": "1618",
+      "decimals": 0,
+      "location": "Table 20",
+      "computed": 1618.3386824338081,
+      "computed_display": "1618",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p75 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "auc"
+      ],
+      "reported": ".810",
+      "decimals": 3,
+      "location": "Table 20",
+      "computed": 0.8098213596940743,
+      "computed_display": "0.810",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p75 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.62",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 2.623648285686034,
+      "computed_display": "2.62",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p75 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.68",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.6756124808706079,
+      "computed_display": "1.68",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p75 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.45",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.4515267520011808,
+      "computed_display": "1.45",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p75 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.26",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.2576105181518578,
+      "computed_display": "1.26",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p75 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p75",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".58",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 0.5778628702128636,
+      "computed_display": "0.58",
+      "status": "MATCH"
+    },
+    {
+      "name": "max_p75 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "threshold"
+      ],
+      "reported": "1283",
+      "decimals": 0,
+      "location": "Table 20",
+      "computed": 1283.2333869755369,
+      "computed_display": "1283",
+      "status": "MATCH"
+    },
+    {
+      "name": "max_p75 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "auc"
+      ],
+      "reported": ".777",
+      "decimals": 3,
+      "location": "Table 20",
+      "computed": 0.7769463256282532,
+      "computed_display": "0.777",
+      "status": "MATCH"
+    },
+    {
+      "name": "max_p75 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.49",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 2.4858077893283896,
+      "computed_display": "2.49",
+      "status": "MATCH"
+    },
+    {
+      "name": "max_p75 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.53",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.5315688910011922,
+      "computed_display": "1.53",
+      "status": "MATCH"
+    },
+    {
+      "name": "max_p75 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.41",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.414720419903632,
+      "computed_display": "1.41",
+      "status": "MATCH"
+    },
+    {
+      "name": "max_p75 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.22",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.2163777575102575,
+      "computed_display": "1.22",
+      "status": "MATCH"
+    },
+    {
+      "name": "max_p75 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "max_p75",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".57",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 0.5663342719825526,
+      "computed_display": "0.57",
+      "status": "MATCH"
+    },
+    {
+      "name": "mean_p75 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "threshold"
+      ],
+      "reported": "903",
+      "decimals": 0,
+      "location": "Table 20",
+      "computed": 903.2249056478306,
+      "computed_display": "903",
+      "status": "MATCH"
+    },
+    {
+      "name": "mean_p75 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "auc"
+      ],
+      "reported": ".789",
+      "decimals": 3,
+      "location": "Table 20",
+      "computed": 0.7893546762187272,
+      "computed_display": "0.789",
+      "status": "MATCH"
+    },
+    {
+      "name": "mean_p75 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.64",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 2.6401211370013273,
+      "computed_display": "2.64",
+      "status": "MATCH"
+    },
+    {
+      "name": "mean_p75 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.53",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.5285379002493082,
+      "computed_display": "1.53",
+      "status": "MATCH"
+    },
+    {
+      "name": "mean_p75 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.48",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.4790919629916002,
+      "computed_display": "1.48",
+      "status": "MATCH"
+    },
+    {
+      "name": "mean_p75 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.18",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.1838048499176312,
+      "computed_display": "1.18",
+      "status": "MATCH"
+    },
+    {
+      "name": "mean_p75 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "mean_p75",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".57",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 0.5672648118679259,
+      "computed_display": "0.57",
+      "status": "MATCH"
+    },
+    {
+      "name": "first_p75 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "threshold"
+      ],
+      "reported": "1126",
+      "decimals": 0,
+      "location": "Table 20",
+      "computed": 1125.7360222969833,
+      "computed_display": "1126",
+      "status": "MATCH"
+    },
+    {
+      "name": "first_p75 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "auc"
+      ],
+      "reported": ".779",
+      "decimals": 3,
+      "location": "Table 20",
+      "computed": 0.7786505848771478,
+      "computed_display": "0.779",
+      "status": "MATCH"
+    },
+    {
+      "name": "first_p75 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.21",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 2.2100168229276163,
+      "computed_display": "2.21",
+      "status": "MATCH"
+    },
+    {
+      "name": "first_p75 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.63",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.6303409910678626,
+      "computed_display": "1.63",
+      "status": "MATCH"
+    },
+    {
+      "name": "first_p75 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.45",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.4538855206881625,
+      "computed_display": "1.45",
+      "status": "MATCH"
+    },
+    {
+      "name": "first_p75 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.22",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.2185074059847554,
+      "computed_display": "1.22",
+      "status": "MATCH"
+    },
+    {
+      "name": "first_p75 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "first_p75",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".55",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 0.5489599550466439,
+      "computed_display": "0.55",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p70 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "threshold"
+      ],
+      "reported": "1272",
+      "decimals": 0,
+      "location": "Table 20",
+      "computed": 1272.0493963392987,
+      "computed_display": "1272",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p70 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "auc"
+      ],
+      "reported": ".797",
+      "decimals": 3,
+      "location": "Table 20",
+      "computed": 0.7972439297022341,
+      "computed_display": "0.797",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p70 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.60",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 2.595536130061185,
+      "computed_display": "2.60",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p70 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.98",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.9786841893207252,
+      "computed_display": "1.98",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p70 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.57",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.5675474093696597,
+      "computed_display": "1.57",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p70 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.24",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.24459158160371,
+      "computed_display": "1.24",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p70 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p70",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".58",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 0.5757527409082879,
+      "computed_display": "0.58",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p80 threshold",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "threshold"
+      ],
+      "reported": "2268",
+      "decimals": 0,
+      "location": "Table 20",
+      "computed": 2268.1502517739773,
+      "computed_display": "2268",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p80 auc",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "auc"
+      ],
+      "reported": ".801",
+      "decimals": 3,
+      "location": "Table 20",
+      "computed": 0.8013373667642705,
+      "computed_display": "0.801",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p80 odds_ratios.GDP_PER_CAP",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "GDP_PER_CAP"
+      ],
+      "reported": "2.39",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 2.388094166637713,
+      "computed_display": "2.39",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p80 odds_ratios.POP_2024",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "POP_2024"
+      ],
+      "reported": "1.52",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.5232260010780283,
+      "computed_display": "1.52",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p80 odds_ratios.LTE_ACCESS_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "LTE_ACCESS_PER_100"
+      ],
+      "reported": "1.30",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.304173803284842,
+      "computed_display": "1.30",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p80 odds_ratios.FIBER_PER_100",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "FIBER_PER_100"
+      ],
+      "reported": "1.24",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 1.2372469769369079,
+      "computed_display": "1.24",
+      "status": "MATCH"
+    },
+    {
+      "name": "sum_p80 odds_ratios.REGION_Northeast",
+      "path": [
+        "extended",
+        "inference",
+        "slp_sensitivity",
+        "sum_p80",
+        "odds_ratios",
+        "REGION_Northeast"
+      ],
+      "reported": ".56",
+      "decimals": 2,
+      "location": "Table 20",
+      "computed": 0.5584858969991613,
+      "computed_display": "0.56",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP OLS R2",
+      "path": [
+        "extended",
+        "inference",
+        "slp_ols",
+        "r2"
+      ],
+      "reported": ".244",
+      "decimals": 3,
+      "location": "p. 49",
+      "computed": 0.24448183266736234,
+      "computed_display": "0.244",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP training-only CV F1",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "training_cv",
+        "f1",
+        "mean"
+      ],
+      "reported": "0.549",
+      "decimals": 3,
+      "location": "pp. 36,47",
+      "computed": 0.5489125733989131,
+      "computed_display": "0.549",
+      "status": "MATCH"
+    },
+    {
+      "name": "SLP training-only CV F1 SD",
+      "path": [
+        "extended",
+        "predictive",
+        "slp",
+        "42",
+        "training_cv",
+        "f1",
+        "sd"
+      ],
+      "reported": "0.016",
+      "decimals": 3,
+      "location": "pp. 36,47",
+      "computed": 0.01633589865952134,
+      "computed_display": "0.016",
+      "status": "MATCH"
+    },
+    {
+      "name": "Count population permutation importance",
+      "path": [
+        "extended",
+        "predictive",
+        "count",
+        "42",
+        "permutation_importance",
+        "POP_2024"
+      ],
+      "reported": ".212",
+      "decimals": 3,
+      "location": "Figure 11",
+      "computed": 0.2122576419472813,
+      "computed_display": "0.212",
+      "status": "MATCH"
+    },
+    {
+      "name": "Conditional log-intensity R2",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "r2"
+      ],
+      "reported": ".114",
+      "decimals": 3,
+      "location": "Table 11; RQ2 results, p. 45",
+      "computed": 0.1140074190948559,
+      "computed_display": "0.114",
+      "status": "MATCH"
+    },
+    {
+      "name": "Conditional log-intensity interval lower",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "r2_bootstrap",
+        "ci",
+        "0"
+      ],
+      "reported": ".068",
+      "decimals": 3,
+      "location": "Table 11; RQ2 results, p. 45",
+      "computed": 0.06828012516224162,
+      "computed_display": "0.068",
+      "status": "MATCH"
+    },
+    {
+      "name": "Conditional log-intensity interval upper",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "r2_bootstrap",
+        "ci",
+        "1"
+      ],
+      "reported": ".153",
+      "decimals": 3,
+      "location": "Table 11; RQ2 results, p. 45",
+      "computed": 0.15326858266240495,
+      "computed_display": "0.153",
+      "status": "MATCH"
+    },
+    {
+      "name": "Conditional log-intensity MAE",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "mae"
+      ],
+      "reported": ".608",
+      "decimals": 3,
+      "location": "Table 11; RQ2 results, p. 45",
+      "computed": 0.6077229291399827,
+      "computed_display": "0.608",
+      "status": "MATCH"
+    },
+    {
+      "name": "Conditional model rows",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "n"
+      ],
+      "reported": "2192",
+      "decimals": 0,
+      "location": "Table 11; RQ2 results, p. 45",
+      "computed": 2192,
+      "computed_display": "2192",
+      "status": "MATCH"
+    },
+    {
+      "name": "Conditional test rows",
+      "path": [
+        "extended",
+        "ridge",
+        "conditional_log",
+        "n_test"
+      ],
+      "reported": "548",
+      "decimals": 0,
+      "location": "Table 11; RQ2 results, p. 45",
+      "computed": 548,
+      "computed_display": "548",
+      "status": "MATCH"
+    }
+  ]
+}

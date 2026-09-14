@@ -1,0 +1,4 @@
+operation,affected_rows
+drop exact duplicates,193
+collapse duplicate keys; SLP sum; other values first non-null,4343
+drop incomplete modeling rows,7

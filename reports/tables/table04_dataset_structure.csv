@@ -1,0 +1,2 @@
+raw_rows,raw_columns,unique_municipalities,exact_duplicates,duplicate_key_rows,clean_rows,columns_before_targets,columns_after_targets,model_rows
+10107,25,5571,193,4343,5571,42,46,5564
