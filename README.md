@@ -1,73 +1,75 @@
 # QM640 Data Analytics Capstone
 
 ## Municipal Correlates of Licensed 5G NR Infrastructure in Brazil
-### A Machine Learning Analysis of Rollout, Digital-Infrastructure Readiness, and Private-Network (SLP) Station Intensity as Proxies for Cloud-Native Transformation
+
+### Presence, Intensity, and Digital-Infrastructure Profiles
 
 **Author:** Rony Anderson Spada Pedroso
 **Institution:** Walsh College
 **Course:** QM640: Data Analytics Capstone
-**Mentor:** Sridhar Srinivas
-**Current report version:** Final report, revised version 1 (September 2026) — responds to the evaluator's assessment: construct-valid naming (NR stations as a proxy; SLP ≠ private 5G), per-capita RQ1 target, two-part count model for RQ2, state-grouped cross-validation, Cramér's V, corrected ROC-AUC reference, associational language throughout
+**Mentor:** Dr. Sridhar Srinivas
+**Term:** August 2026
+**Current report version:** Final Report, Revised (September 13, 2026)
+
+> **Construct note.** Licensed NR station counts are an observable radio-infrastructure footprint and are **not** evidence of 5G Standalone core, cloud-native, or virtualized RAN operation, and SLP intensity is a broad private-network-related proxy, **not** verified private 5G adoption.
 
 ## Project Overview
 
-This repository supports a data analytics capstone project evaluating the municipal-level state of cloud-native telecommunications transformation in Brazil. It uses open public data from the Brazilian National Telecommunications Agency (Anatel) and the Brazilian Institute of Geography and Statistics (IBGE) to analyze where 5G NR rollout, fiber intensity, digital readiness, and private-network/SLP adoption are concentrated across all 5,571 municipalities.
-
-## Abstract
-
-**Problem.** Licensed 5G New Radio (NR) infrastructure is spread unevenly across Brazil's 5,571 municipalities, and it is not sufficiently understood how municipal demographic, economic, and existing telecommunications characteristics are associated with that distribution. NR station counts are used as an observable proxy for cloud-native transformation; they do not establish standalone-core or virtualized operation.
-
-**Solution approach.** Four questions — whether high-count NR rollout can be predicted, how NR station intensity is associated with structural characteristics, how municipalities group on digital-infrastructure readiness, and what is associated with private-network (SLP) station intensity — examined with a random forest, a two-part model (presence logistic plus negative-binomial count model with population exposure), k-means with chi-square and Cramér's V, and logistic regression. Predictors are restricted to pre-existing structural characteristics; validation uses held-out data and state-grouped cross-validation.
-
-**Data.** Open Anatel records merged with IBGE socioeconomic data for all 5,571 municipalities; cross-sectional, non-experimental design.
-
-**Major results.** High-count NR rollout ROC-AUC = .927 (chance .50; prevalence 22.5%), falling to .818 with a per-capita target — much of the signal is municipal scale. NR station intensity is only weakly associated with structure (NB pseudo-R² = .017), with fiber, population, and the South region significant. Two readiness clusters are associated with macro-region (Cramér's V = .21). SLP intensity ROC-AUC = .810, with reduced performance under state-grouped validation (.758 ± .067).
-
-**Implementation area.** A screening and prioritization input for telecommunications planning — not a compliance model — keyed to the IBGE municipal code.
+This repository supports a data analytics capstone that analyzes where licensed 5G New Radio (NR) infrastructure appears across all 5,571 Brazilian municipalities and how intensive deployment becomes after arrival, using open public data from the National Telecommunications Agency (Anatel) and the Brazilian Institute of Geography and Statistics (IBGE).
 
 ## Research Questions
 
-- **RQ1 — High-count NR rollout classification.** Can pre-existing structural characteristics predict whether a municipality is a high-count licensed 5G NR rollout site, and does the result hold with a per-capita target?
-- **RQ2 — Structural correlates of NR station intensity.** To what extent are structural characteristics associated with population-normalized NR station intensity, and which carry significant associations?
-- **RQ3 — Digital-infrastructure readiness segmentation.** How do municipalities cluster on readiness indicators, and how strongly is membership associated with region?
-- **RQ4 — Correlates of SLP station intensity.** Which characteristics are associated with high private-network-related SLP station intensity, and does the association generalize across states?
+- **RQ1 — High-count NR rollout classification.** Can structural municipal (socioeconomic and infrastructure) characteristics predict whether a municipality is a high-count licensed 5G NR rollout site, and does the result hold when the target is redefined on a per-capita basis?
+- **RQ2 — Structural correlates of NR station intensity.** To what extent are structural characteristics associated with population-normalized NR station intensity, and which characteristics carry statistically significant associations? (Two-part hurdle framework: presence logistic + zero-truncated negative binomial with population offset.)
+- **RQ3 — Digital-infrastructure profile segmentation.** How do municipalities cluster on digital-infrastructure profile indicators, and how strongly is cluster membership associated with macro-region?
+- **RQ4 — Correlates of SLP station intensity (exploratory, supplementary).** Which characteristics are associated with high private-network-related SLP station intensity, and does the association generalize across states?
 
-## Headline Results (held-out, seed = 42)
+## Headline Results (Final Report, Tables 11–14)
 
-| RQ | Model | Key metrics |
-|---|---|---|
-| RQ1 | Random forest, count target (leakage-free, tuned) | Accuracy .915, F1 .808, ROC-AUC .927 (chance .50; naive spec .965); state-grouped CV AUC .909 ± .023 |
-| RQ1 | Random forest, per-capita target (robustness) | Accuracy .813, F1 .590, ROC-AUC .818 |
-| RQ2 | Two-part: presence logistic + negative-binomial (population exposure) | Presence AUC .849; NB α = 4.42, pseudo-R² .017, LLR p < .001; ridge R² .02 (raw) – .11 (NR-present) |
-| RQ3 | K-means (k = 2) + chi-square | Silhouette .305, bootstrap ARI .99, χ²(4) = 254.1, p < .001, Cramér's V = .21 |
-| RQ4 | Balanced logistic regression | ROC-AUC .810, recall .753, LLR p < .001; state-grouped CV AUC .758 ± .067 |
+Primary final estimates are repeated stratified 5×5 cross-validation on the full modeling frame (N = 5,564), confirmed once on an independent seed-2026 holdout; the seed-42 development split is retained as the transparent development comparison.
+
+| RQ | Model | Development split (seed 42) | Repeated 5×5 CV | Fresh split (seed 2026) |
+| --- | --- | --- | --- | --- |
+| RQ1 | Random forest, count target (leakage-free, tuned) | ROC-AUC .927 [.906, .945]; F1 .808 | .920 ± .009 | .919 [.899, .938]; F1 .773 |
+| RQ1 | Random forest, per-capita target (re-tuned) | ROC-AUC .817 [.790, .845]; F1 .593 | .824 ± .017 | .825 [.801, .851]; F1 .590 |
+| RQ2 | Hurdle part 1: presence logistic | ROC-AUC .849 [.826, .870] | .849 ± .014 | .844 [.821, .864] |
+| RQ2 | Hurdle part 2: zero-truncated NB (n = 2,192 NR-present; population offset) | α = 0.66; McFadden pseudo-R² = .017; γ = −.14 (sub-proportional); rate ratios: density 1.25, fiber 1.14, GDP/cap 1.11 (state-clustered t(26) CIs) | — | — |
+| RQ2 | Ridge (predictive complement) | Held-out R² = .02 [−.08, .09] raw; .06 [−.15, .18] log1p (CIs include 0) | — | — |
+| RQ3 | K-means (k = 2) + chi-square | Silhouette .305; bootstrap ARI .99 ± .01; χ²(4) = 254.1, p < .001; Cramér's V = .21 | — | — |
+| RQ4 | Balanced logistic (exploratory) | ROC-AUC .810 [.786, .836]; PR-AUC .623 | .798 ± .010 | .780 [.749, .806] |
+
+State-grouped (GroupKFold by 27 UFs) validation: RQ1 count .909 ± .023; RQ2 presence .839 ± .035; RQ4 .758 ± .067. A naive RQ1 specification including near-target variables reaches .965 and is reported only as a leakage demonstration. The supplementary **unconditional** negative binomial (full frame; α = 4.42; γ = +.19) mixes the presence and intensity margins and is not a hurdle component.
 
 ## Reproduction
 
-The authoritative reproduction path is the single-command pipeline:
-
-```bash
+```
 pip install -r requirements.txt
 python final_pipeline.py
 ```
 
-`requirements.txt` pins `scikit-learn==1.8.0`, the version used for the reported random-forest results (tree construction changed in 1.9; every other result is version-stable). Use `python3` on macOS/Linux if `python` is not on your PATH.
-
-**Cross-platform note.** On Linux x86-64 (the environment used for the final report, and the one Google Colab provides) every value regenerates exactly. On Apple Silicon macOS (Python 3.13, scikit-learn 1.8.0) all cleaning, regression, clustering, chi-square, and logistic results are identical, while random-forest metrics shift by at most ±.001 (e.g., F1 .809 vs. .808; naive ROC-AUC .966 vs. .965) because floating-point summation order differs across processor architectures; no conclusion changes. The committed `reports/` outputs were generated on Apple Silicon.
-
-It regenerates every number, table, and figure of the final report from the committed analysis input (`data/processed/merged_municipal_dataset.csv`) with a fixed seed (42), writing outputs to `reports/figures` and `reports/tables` (including a machine-readable `headline_results.json`).
-
-`notebooks/06_final_report_pipeline_colab.ipynb` runs the identical pipeline in Google Colab (~3 minutes), prints a headline-results check against the final report, and packages all outputs for download.
+`requirements.txt` pins `scikit-learn==1.8.0`. On Linux x86-64 every value regenerates exactly; on Apple Silicon macOS random-forest metrics shift by at most ±.001 with no change in any conclusion. The pipeline regenerates every number, table, and figure of the final report (Figures 1–11) from the committed analysis input with fixed seeds, writing to `reports/figures` and `reports/tables` (including machine-readable `headline_results.json`). `notebooks/06_final_report_pipeline_colab.ipynb` runs the identical pipeline in Google Colab.
 
 ## Data Provenance and Reproducibility Scope
 
-Every column of the merged dataset is traced to its IBGE/Anatel source in `docs/DATA_PROVENANCE.md` (Table 3 of the final report), and `reports/figures/figure00b_source_merge.png` shows the merge design. The committed analysis input has SHA-256 `50fac84b16f63d66628741f36686cc076f43c90632a3befe53ca43ed9b316207`; `final_pipeline.py` recomputes and records it in `headline_results.json`, and `python src/data_loader.py --check` verifies the file's columns and checksum.
+Provenance is reported at two levels (Final Report, Table 3 and Appendix B):
 
-Reproducibility is exact from the committed merged dataset onward. From the public sources onward it is documented at the dataset level (source, access point, variables, aggregation), not the file level: the specific extract files and download snapshots were not archived at acquisition time. This is stated as a limitation in the final report; re-acquiring and archiving the raw extracts under `data/raw/` is the documented next step. `docs/DATA_PROVENANCE.md` also records each source's reference period or publication cadence (Census 2022; population estimates 2024 vintage; municipal GDP annual with a two-year lag; Anatel accesses monthly; station and SLP registries continuous), so a later rebuild can select the matching vintage where it is known.
+- **Computational reproducibility from the committed merge is exact.** The committed analysis input `data/processed/merged_municipal_dataset.csv` has SHA-256 `50fac84b16f63d66628741f36686cc076f43c90632a3befe53ca43ed9b316207`; `final_pipeline.py` recomputes and records it in `headline_results.json`, and `python src/data_loader.py --check` verifies columns and checksum.
+- **Upstream acquisition reproducibility is dataset-level.** Each source family is mapped to its official landing page and current direct resource or SIDRA table, with vintage, grain, and unresolved fields stated explicitly, under assurance classes A/B/C. The historical raw snapshot bytes were not archived, so byte-identical historical reproduction is not claimed. The machine-readable manifest is committed at `docs/data_provenance_manifest_v6.csv` and mirrored in `docs/DATA_PROVENANCE.md` (Appendix B of the final report).
+
+| Source family | Official access | Assurance |
+| --- | --- | --- |
+| IBGE Census 2022 (pop., area, density) | https://sidra.ibge.gov.br/tabela/4714 | A |
+| IBGE population estimate 2024 | https://sidra.ibge.gov.br/tabela/6579 | A |
+| IBGE municipal GDP (PIB dos Municípios) | https://sidra.ibge.gov.br/tabela/5938 | B |
+| Anatel mobile accesses (SMP) | https://www.anatel.gov.br/dadosabertos/paineis_de_dados/acessos/acessos_telefonia_movel.zip | B |
+| Anatel licensed stations | https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/estacoes_licenciadas.zip | B |
+| Anatel Meu Município (fiber/backhaul) | https://informacoes.anatel.gov.br/paineis/ (`meu_municipio.zip`) | B |
+| Anatel SLP / Redes Privativas | https://www.gov.br/anatel/pt-br/regulado/radiofrequencia/redes-privativas | C |
+| Anatel measured mobile speed | https://informacoes.anatel.gov.br/paineis/ (`medidas_qoe_smp.zip` candidate) | C |
 
 ## Repository Structure
 
-```text
+```
 .
 ├── .gitignore
 ├── LICENSE
@@ -75,21 +77,22 @@ Reproducibility is exact from the committed merged dataset onward. From the publ
 ├── requirements.txt
 ├── final_pipeline.py            (authoritative reproduction path)
 ├── data/
-│   ├── raw/                     (git-ignored; downloaded locally per src/data_loader.py)
+│   ├── raw/                     (git-ignored; downloaded locally)
 │   └── processed/
 │       └── merged_municipal_dataset.csv   (committed analysis input, 1.8 MB)
 ├── docs/
 │   ├── DATA_DICTIONARY.md
-│   └── DATA_PROVENANCE.md      (Table 3: source-to-variable lineage)
+│   ├── DATA_PROVENANCE.md       (Table 3 / Appendix B: source-to-variable lineage)
+│   └── data_provenance_manifest_v6.csv    (machine-readable Appendix B manifest)
 ├── notebooks/
-│   ├── 01_data_cleaning_and_alignment.ipynb   (scaffold: original acquisition design)
+│   ├── 01_data_cleaning_and_alignment.ipynb   (scaffold: acquisition design)
 │   ├── 02_feature_engineering.ipynb
 │   ├── 03_exploratory_data_analysis.ipynb
 │   ├── 04_statistical_tests_rq2_rq4.ipynb
-│   ├── 05_ml_pipelines_rq1_rq3_rq5_rq6.ipynb
+│   ├── 05_ml_pipelines_rq1_rq3_rq5_rq6.ipynb  (legacy filename from synopsis-era RQ numbering)
 │   └── 06_final_report_pipeline_colab.ipynb   (Colab mirror of final_pipeline.py)
 ├── reports/
-│   ├── figures/                 (Figures 1–10 of the final report)
+│   ├── figures/                 (Figures 1–11 of the final report)
 │   └── tables/                  (result tables + headline_results.json)
 └── src/
     ├── __init__.py
@@ -99,14 +102,12 @@ Reproducibility is exact from the committed merged dataset onward. From the publ
     └── visualization_utils.py
 ```
 
-The five scaffold notebooks document the original seven-extract acquisition design from the synopsis; `final_pipeline.py` and its Colab counterpart are the authoritative reproduction paths for the final report.
-
 ## Data Notes
 
-- The supplied merged dataset contains 10,107 rows × 25 columns with exactly 5,571 unique municipalities; `final_pipeline.py` drops 193 exact duplicates, collapses 4,343 duplicate municipality keys (first non-null for stable variables; sum for `SLP_STATION_CNT`; max for `PRIVATE_5G_LIC`), and restores the one-row-per-municipality frame (5,571 × 42 after feature engineering). The duplicate keys have a single origin: 4,343 municipalities appear exactly twice and, within each pair, only `SLP_STATION_CNT` differs — the signature of a one-to-many join with Anatel's SLP registry, which carries more than one record per municipality. Summing `SLP_STATION_CNT` reconstructs the municipal total (e.g., IBGE 1100015: 77 + 31 = 108); keeping only the first record would have discarded 4,343 partial counts.
-- The binary fiber flag is saturated (100% of non-missing values equal 1); `FIBER_PER_100` is the substantive fiber-readiness measure.
-- `NR_ACCESS_PER_100` and `AVG_DL_SPEED` are excluded from the RQ1/RQ2 predictor sets as near-target (leakage) variables.
-- Raw Anatel/IBGE extracts are excluded from version control because of their size; acquisition is documented in `src/data_loader.py` (Wayback snapshots, data-panel extraction, and file-server metadata parsing). Source landing pages were verified July 23, 2026; raw extracts acquired August 2026.
+- The supplied merge contains 10,107 rows × 25 columns with exactly 5,571 unique municipalities; the pipeline drops 193 exact duplicates and collapses 4,343 duplicate municipal keys (first non-null for stable variables; **sum** for `SLP_STATION_CNT`, with max/mean/first tested as RQ4 sensitivity; max for `PRIVATE_5G_LIC`), yielding 5,571 × 42 after feature engineering. The sum rule preserves both supplied SLP counts without asserting it reconstructs the unarchived historical registry grain; RQ4 therefore remains exploratory.
+- The binary fiber flag is saturated (100% of non-missing values = 1); `FIBER_PER_100` is the substantive fiber measure.
+- `NR_ACCESS_PER_100` and `AVG_DL_SPEED` are excluded from RQ1/RQ2 predictor sets as near-target (leakage) variables; they are used only in EDA and RQ3.
+- Raw Anatel/IBGE extracts are excluded from version control because of size; acquisition is documented in `src/data_loader.py` and `docs/DATA_PROVENANCE.md`. Source landing pages verified July 23, 2026; raw extracts acquired August 2026; original snapshot bytes not archived (stated limitation).
 
 ## License
 

@@ -1,0 +1,63 @@
+{
+  "_meta": {
+    "source": "QM640 Final Report (Revised), September 13, 2026",
+    "tolerance_default": 0.005,
+    "tolerance_note": "Report states Linux vs Apple Silicon runs differ by at most +/-0.001 on random-forest metrics; 0.005 allows minor library-version drift. Larger deviations require investigation.",
+    "input_sha256": "50fac84b16f63d66628741f36686cc076f43c90632a3befe53ca43ed9b316207"
+  },
+  "dataset": {
+    "raw_rows": 10107, "raw_cols": 25, "unique_municipalities": 5571,
+    "clean_rows": 5571, "clean_cols": 42, "exact_duplicates_dropped": 193,
+    "duplicate_key_rows": 4343, "modeling_frame_n": 5564, "nr_present_share": 0.393,
+    "nr_zero_share": 0.607, "p75_count_threshold": 9, "p75_per100k_threshold": 46.4,
+    "slp_p75_threshold_per_100k": 1618
+  },
+  "rq1": {
+    "leakage_free_roc_auc_dev": 0.927, "leakage_free_roc_auc_ci": [0.906, 0.945],
+    "naive_roc_auc": 0.965,
+    "f1_dev": 0.808, "cv_f1_train_side": 0.768, "cv_f1_train_side_sd": 0.025,
+    "accuracy_dev": 0.915,
+    "repeated_cv_roc_auc": 0.920, "repeated_cv_roc_auc_sd": 0.009,
+    "seed2026_roc_auc": 0.919, "seed2026_f1": 0.773,
+    "per_capita_retuned_roc_auc": 0.817, "per_capita_retuned_ci": [0.790, 0.845],
+    "per_capita_repeated_cv": 0.824, "per_capita_repeated_cv_sd": 0.017,
+    "per_capita_seed2026": 0.825,
+    "state_grouped_roc_auc": 0.909, "state_grouped_roc_auc_sd": 0.023,
+    "perm_importance_pop_count_target": 0.212,
+    "p70_roc_auc": 0.903, "p80_roc_auc": 0.925
+  },
+  "rq2": {
+    "presence_roc_auc_dev": 0.849, "presence_ci": [0.826, 0.870],
+    "presence_repeated_cv": 0.849, "presence_seed2026": 0.844,
+    "presence_state_grouped": 0.839,
+    "truncated_nb_n": 2192, "truncated_nb_alpha": 0.66,
+    "truncated_nb_mcfadden": 0.017, "gamma_truncated": -0.139,
+    "rate_ratio_density": 1.25, "rate_ratio_fiber": 1.14, "rate_ratio_gdp": 1.11,
+    "unconditional_nb_alpha": 4.42, "gamma_unconditional": 0.194,
+    "ridge_r2_raw": 0.02, "ridge_r2_raw_ci": [-0.08, 0.09],
+    "ridge_r2_log": 0.06, "ridge_r2_log_ci": [-0.15, 0.18],
+    "ridge_mae_raw": 43.1
+  },
+  "rq3": {
+    "k": 2, "silhouette": 0.305, "bootstrap_ari": 0.99,
+    "chi2": 254.1, "chi2_df": 4, "cramers_v": 0.21,
+    "higher_cluster_n": 1231, "lower_cluster_n": 4334, "clustering_n": 5565
+  },
+  "rq4": {
+    "roc_auc_dev": 0.810, "roc_auc_ci": [0.786, 0.836], "pr_auc": 0.623,
+    "f1_dev": 0.576, "cv_f1_train_side": 0.556, "cv_f1_train_side_sd": 0.017,
+    "accuracy_dev": 0.723, "sensitivity": 0.753, "specificity": 0.713,
+    "precision": 0.467, "brier": 0.176,
+    "confusion_tp_fn_fp_tn": [262, 86, 299, 744],
+    "repeated_cv_roc_auc": 0.798, "seed2026_roc_auc": 0.780,
+    "state_grouped_roc_auc": 0.758, "state_grouped_roc_auc_sd": 0.067,
+    "or_gdp": 2.62, "or_pop": 1.68, "or_lte": 1.45, "or_fiber": 1.26,
+    "or_northeast": 0.58, "mcfadden": 0.196,
+    "log_intensity_ols_r2": 0.244
+  },
+  "eda": {
+    "anova_speed_by_stage_F": 691.4,
+    "speed_corr_nr_access": 0.61, "speed_corr_density": 0.36,
+    "presence_share_by_region": {"South": 0.468, "Northeast": 0.387, "Southeast": 0.376, "North": 0.349, "Center-West": 0.333}
+  }
+}
