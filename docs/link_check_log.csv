@@ -1,11 +1,11 @@
 url,http_status,content_type,content_length,error,checked_at_utc
-https://sidra.ibge.gov.br/,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://sidra.ibge.gov.br/tabela/4714,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://sidra.ibge.gov.br/tabela/6579,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://sidra.ibge.gov.br/tabela/5938,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://informacoes.anatel.gov.br/paineis/,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://www.anatel.gov.br/dadosabertos/paineis_de_dados/acessos/acessos_telefonia_movel.zip,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://www.anatel.gov.br/dadosabertos/,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/estacoes_licenciadas.zip,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
-https://www.gov.br/anatel/pt-br/regulado/radiofrequencia/redes-privativas,,,,"URLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate in certificate chain (_ssl.c:1028)'))",2026-09-14T01:51:12+00:00
+https://sidra.ibge.gov.br/,200,text/html; charset=utf-8,108193,,2026-09-14T02:42:19+00:00
+https://sidra.ibge.gov.br/tabela/4714,200,text/html; charset=utf-8,91183,,2026-09-14T02:42:19+00:00
+https://sidra.ibge.gov.br/tabela/6579,200,text/html; charset=utf-8,91140,,2026-09-14T02:42:19+00:00
+https://www.ibge.gov.br/estatisticas/economicas/contas-nacionais/9088-produto-interno-bruto-dos-municipios.html,200,text/html; charset=utf-8,,,2026-09-14T02:42:19+00:00
+https://sidra.ibge.gov.br/tabela/5938,200,text/html; charset=utf-8,91378,,2026-09-14T02:42:19+00:00
+https://informacoes.anatel.gov.br/paineis/,200,text/html; charset=utf-8,,,2026-09-14T02:42:19+00:00
+https://www.anatel.gov.br/dadosabertos/paineis_de_dados/acessos/acessos_telefonia_movel.zip,206,application/x-zip-compressed,1024,,2026-09-14T02:42:19+00:00
+https://www.anatel.gov.br/dadosabertos/,,,,<HTTPError 403: 'Forbidden'>,2026-09-14T02:42:19+00:00
+https://www.anatel.gov.br/dadosabertos/paineis_de_dados/outorga_e_licenciamento/estacoes_licenciadas.zip,206,application/x-zip-compressed,1024,,2026-09-14T02:42:19+00:00
+https://www.gov.br/anatel/pt-br/regulado/radiofrequencia/redes-privativas,200,text/html; charset=utf-8,442240,,2026-09-14T02:42:19+00:00
